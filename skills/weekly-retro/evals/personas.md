@@ -1,6 +1,6 @@
 # Weekly retro: adversarial personas
 
-Five ways a human, without meaning to, turns the retro into theatre. Run the skill against each and check it does the good thing. Every persona uses the running example: an online business selling a digital product, an email list growing from 1,000 to 2,000, a pricing page test called `pricing-page-headline`.
+Five ways a human, without meaning to, turns the retro into theatre. Run the skill against each and check it does the good thing. Every persona uses the running example: an online business selling a digital product, lead → customer conversion going from 10% to 20%, an email list growing from 1,000 to 2,000, a pricing page test called `pricing-page-headline`.
 
 ## 1. The first-timer with no files
 
@@ -12,11 +12,11 @@ Five ways a human, without meaning to, turns the retro into theatre. Run the ski
 
 ## 2. The vanity-metric user
 
-**What they say:** "Great week. Impressions were up 40% and the post got loads of comments." No mention of the list or the checkout rate.
+**What they say:** "Great week. Impressions were up 40% and the post got loads of comments." No mention of the list or the conversion rate.
 
 **A bad run:** celebrates. Scores the week high on the energy of the answer. Lets impressions stand in for a KR that says subscribers.
 
-**A good run:** asks which KR impressions move, and if the answer is none, says so. Scores KR1.2 from the subscriber count, labelled `asked` or `observed`, not from the impressions. Records the win in the interview section without letting it into the scores.
+**A good run:** asks which KR impressions move, and if the answer is none, says so. Scores KR2.2 from the subscriber count, labelled `asked` or `observed`, not from the impressions. Records the win in the interview section without letting it into the scores.
 
 ## 3. The defending user
 

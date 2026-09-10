@@ -6,8 +6,8 @@ This is arithmetic anyone can do in a spreadsheet. No script ships in v1.
 
 ## What you need
 
-- **Base rate.** The baseline from your experiment file, as a proportion. `3.2%` is `0.032`.
-- **Weekly traffic.** Visitors who will be assigned to the test each week, across both arms.
+- **Base rate.** The baseline from your experiment file, as a proportion. `10%` is `0.10`.
+- **Weekly traffic.** Leads (or visitors) who will be assigned to the test each week, across both arms.
 - **Power and confidence.** Use 80% power and a two-sided 5% significance level unless you have a reason not to. These give a combined z of roughly 2.8.
 
 ## The formula
@@ -22,18 +22,18 @@ where `p` is the base rate and `n_per_arm` is the assigned visitors in one arm o
 
 ## Worked table
 
-Base rate 3.2%, checkout rate on a pricing page. Two traffic levels, so you can see where the line falls.
+Base rate 10%, lead → customer conversion on a pricing page. Two traffic levels, so you can see where the line falls.
 
-| Weekly traffic | Weeks | Per arm | Minimum detectable lift (absolute) | Variant would need to reach | Relative lift |
+| Leads per week | Weeks | Per arm | Minimum detectable lift (absolute) | Variant would need to reach | Relative lift |
 |---|---|---|---|---|---|
-| 1,000 | 2 | 1,000 | 2.2 points | 5.4% | +69% |
-| 1,000 | 4 | 2,000 | 1.6 points | 4.8% | +49% |
-| 1,000 | 8 | 4,000 | 1.1 points | 4.3% | +34% |
-| 5,000 | 2 | 5,000 | 1.0 point | 4.2% | +31% |
-| 5,000 | 4 | 10,000 | 0.7 points | 3.9% | +22% |
-| 5,000 | 8 | 20,000 | 0.5 points | 3.7% | +15% |
+| 1,000 | 2 | 1,000 | 3.8 points | 13.8% | +38% |
+| 1,000 | 4 | 2,000 | 2.7 points | 12.7% | +27% |
+| 1,000 | 8 | 4,000 | 1.9 points | 11.9% | +19% |
+| 5,000 | 2 | 5,000 | 1.7 points | 11.7% | +17% |
+| 5,000 | 4 | 10,000 | 1.2 points | 11.2% | +12% |
+| 5,000 | 8 | 20,000 | 0.8 points | 10.8% | +8% |
 
-Read it like this. At 1,000 visitors a week, a headline change would have to lift checkout rate by a third to show up even after eight weeks. Headline changes do not do that. At 5,000 a week, a 4-week test can see a lift of about a fifth, which is on the edge of plausible for a strong change.
+Read it like this. At 1,000 leads a week, a headline change would have to lift conversion by about a fifth to show up even after eight weeks. Headline changes rarely do that. At 5,000 a week, a 4-week test can see a lift of about an eighth, which is plausible for a strong change, and a 3-week test at that traffic detects about 1.4 points, which is what the two pricing-page examples in this folder relied on.
 
 ## The "cannot conclude" verdict
 

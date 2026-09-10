@@ -1,9 +1,9 @@
 ---
 title: Checkout button copy
 status: measured
-kr: O2
-primary_metric: checkout rate
-baseline: 3.2%
+kr: O1
+primary_metric: lead → customer conversion
+baseline: 10%
 window_end: 2026-07-19
 ---
 
@@ -11,15 +11,15 @@ window_end: 2026-07-19
 
 ## Hypothesis
 
-If we change the pricing-page button from a generic label to one that names what the visitor gets, then visitors who reach the pricing page will start checkout more often, measured as checkout rate moving from 3.2% to 4% or better, because the generic label makes the next step feel like a commitment rather than a delivery.
+If we change the pricing-page button from a generic label to one that names what the buyer gets, then leads who reach the pricing page will become customers more often, measured as lead → customer conversion moving from 10% to 12% or better, because the generic label makes the next step feel like a commitment rather than a delivery.
 
 ## Which KR it moves
 
-O2. Checkout rate is the KR itself: the objective is to lift it from 3.2%.
+O1. Lead → customer conversion is the KR itself: the objective is to lift it from 10% to 20%.
 
 ## Audience
 
-Every visitor to the pricing page, both arms, assigned on first request. Signed-in customers excluded: they already bought. Roughly 5,000 assigned visitors a week across both arms.
+Every lead who reaches the pricing page, both arms, assigned on first request. Existing customers excluded: they already bought. Roughly 5,000 assigned leads a week across both arms.
 
 ## Treatment
 
@@ -27,16 +27,16 @@ Control: the existing button label. Variant: a label that names the product and 
 
 ## Baseline snapshot
 
-3.2% checkout rate over the four weeks before launch, from the assignment-gated report, taken 2026-06-27.
+10.0% lead → customer conversion over the four weeks before launch, from the assignment-gated report, taken 2026-06-27.
 
 ## Primary and secondary metric
 
-- **Primary:** checkout rate, assigned visitors to checkout started.
-- **Secondary:** purchase rate, so we can see whether extra checkouts finish. Bounce rate on the pricing page, in case the new label puts people off before they scroll.
+- **Primary:** lead → customer conversion, assigned leads to completed purchase.
+- **Secondary:** checkout starts, so we can see whether the label moves people into checkout or only through it. Bounce rate on the pricing page, in case the new label puts people off before they scroll.
 
 ## Window
 
-2026-06-29 to 2026-07-19. Three weeks. At 5,000 a week the power check gives a minimum detectable lift of about 0.8 points, and the hypothesis needs 0.8. Tight, but it concludes.
+2026-06-29 to 2026-07-19. Three weeks. At 5,000 a week the power check gives a minimum detectable lift of about 1.4 points, and the hypothesis needs 2. It concludes with room to spare.
 
 ## Confounders, stated honestly
 
@@ -44,7 +44,7 @@ A newsletter issue went out in week two with a plain link to the pricing page. I
 
 ## Kill criteria
 
-Stop early if checkout rate in either arm falls below 2.4% for a full week, or if checkout errors appear in one arm and not the other.
+Stop early if conversion in either arm falls below 7.5% for a full week, or if checkout errors appear in one arm and not the other.
 
 ## Status
 
@@ -54,7 +54,7 @@ Stop early if checkout rate in either arm falls below 2.4% for a full week, or i
 
 ## Result
 
-Variant 4.1%, control 3.2%, over roughly 7,500 assigned visitors per arm. Difference 0.9 points, above the 0.8 the power check required. Purchase rate moved in the same direction, smaller. Bounce rate flat.
+Variant 12.4%, control 10.0%, over roughly 7,500 assigned leads per arm. Difference 2.4 points, above the 1.4 the power check required and above the 2 the hypothesis asked for. Checkout starts moved in the same direction, larger. Bounce rate flat.
 
 ## Learning
 

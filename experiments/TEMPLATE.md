@@ -2,8 +2,8 @@
 title: [Short name for the experiment]
 status: planned       # planned | live | measured | killed
 kr: [O1]              # which key result this moves
-primary_metric: [one metric, e.g. checkout rate]
-baseline: [the number you are starting from, e.g. 3.2%]
+primary_metric: [one metric, e.g. lead → customer conversion]
+baseline: [the number you are starting from, e.g. 10%]
 window_end: [YYYY-MM-DD]
 ---
 

@@ -1,12 +1,12 @@
 # Weekly retro - 4 Sep 2026 (example)
 
-**Week:** 31 Aug–4 Sep 2026. **Month's intentions:** no stale experiments; publish weekly before product work; read revenue on day one. **Capacity next week:** 35 hours (asked).
+**Week:** 31 Aug–4 Sep 2026. **Month's intentions:** no stale experiments; publish every Tuesday before product work; read ARR on day one. **Capacity next week:** 35 hours (asked).
 
 ## 1. Experiments (first, stale on top)
 
 | Experiment | Status | Window end | Days over | Readout (typed by you) | Decision |
 |---|---|---|---|---|---|
-| `pricing-page-headline` | live | 2026-08-20 | 15 | variant 4.0% vs control 3.2% over 3 weeks; power check said the window could detect 0.8 points, so this clears it | measured (observed after the file was updated this session) |
+| `pricing-page-headline` | live | 2026-08-20 | 15 | variant 11.8% vs control 10.0% over 3 weeks; power check said the window could detect 1.4 points, so this clears it | measured (observed after the file was updated this session) |
 | `welcome-sequence-v2` | killed | 2026-08-07 | n/a | killed 24 Jul with the learning typed | closed |
 
 **Scoring gate:** OPEN. One stale experiment resolved this session. It sat fifteen days over because nobody was chasing it; that is the finding, and the reason this section is first.
@@ -15,33 +15,32 @@
 
 | KR | Target | This week | Score 0–100 | Label |
 |---|---|---|---|---|
-| KR1.1 | lead magnet in every post | mentioned in Tuesday's post | 100 | observed |
-| KR1.2 | 1,250 subscribers | 1,103 | 41 | asked |
-| KR2.1 | one pricing test live | none live since 20 Aug; next one `planned` | 0 | observed |
-| KR2.2 | measured winner | variant wins, 4.0% | 100 | observed |
-| KR3.1 | 13 of 13 weeks published | published Tuesday; 4 of 5 so far | 80 | observed |
+| KR1.1 | one conversion test live | none live since 20 Aug; next one `planned` | 0 | observed |
+| KR1.2 | 20% lead → customer conversion | 11.8% with the winning headline; 1.8 of the 10 points needed | 20 | observed |
+| KR2.1 | publish every Tuesday, 13 of 13 | published Tuesday; 4 of 5 so far | 80 | observed |
+| KR2.2 | 1,250 on the list | 1,103 | 41 | asked |
 
 ## 3. Standup pattern-mining
 
 | Day | `must_be_true` | Verdict | Slip reason |
 |---|---|---|---|
-| Mon | Read August revenue and record it | landed | |
+| Mon | Read August ARR and record it | landed | |
 | Tue | Post published by 12:00 | landed | |
-| Wed | Second pricing test written to `planned` with baseline and metric | slipped | "rewrote the headline four times" (asked) |
+| Wed | Second conversion test written to `planned` with baseline and metric | slipped | "rewrote the headline four times" (asked) |
 | Thu | Same as Wed | slipped | "wanted the copy right first" (asked) |
 | Fri | Same as Wed | pending | retro running; close tonight |
 
-**Which slip repeated?** The same one, three days: the second pricing test, held back for copy. That is "polishing past good-enough". **Standups with no verdict:** Friday, closes tonight.
+**Which slip repeated?** The same one, three days: the second conversion test, held back for copy. That is "polishing past good-enough". **Standups with no verdict:** Friday, closes tonight.
 
 ## Bets
 
-1. Second pricing test live by Tuesday, copy as it stands (KR2.1)
-2. Publish Tuesday before opening the product repo (KR3.1)
-3. Move the winning headline to the pricing page and record the date in the experiment file - KR2.2, smallest version: the headline only, no other page changes
+1. Pricing-page headline test live by Tuesday (KR1.1)
+2. Publish Tuesday before opening the product repo (KR2.1)
+3. Move the winning headline to the pricing page and record the date in the experiment file - KR1.2, smallest version: the headline only, no other page changes
 
 ## 4. Staged tasks
 
-- [ ] Fill baseline (4.0%) and `window_end` on the second pricing test, run the power check (bet 1)
+- [ ] Fill baseline (11.8%) and `window_end` on the second conversion test, run the power check (bet 1)
 - [ ] Draft Tuesday's post from the retro finding above (bet 2)
 - [ ] Swap the headline; add the change date to `experiments/pricing-page-headline.md` (bet 3)
 

@@ -78,9 +78,9 @@ Readouts are typed by the human. If analytics are connected, offer the number yo
 For each row in the OKR file's key results table, give a score from 0 to 100% and one line of evidence with its label. Outcome KRs: progress from baseline to target, rounded to the nearest 5. Behaviour KRs: the share of required instances so far this quarter that happened. Put the arithmetic in the evidence line.
 
 ```
-KR3.1  published every week   85%  observed: <n> of <n> weeks in the calendar
-KR1.2  <target> subscribers     40%  asked: list is at <n>, human's read of the dashboard
-KR2.2  measured winner          0%  observed: pricing-page-headline still live, <n> days left
+KR2.1  published every Tuesday      85%  observed: <n> of <n> weeks in the calendar
+KR2.2  <target> on the list          40%  asked: list is at <n>, human's read of the dashboard
+KR1.2  <target> lead → customer conversion   0%  observed: pricing-page-headline still live, <n> days left
 ```
 
 Behaviour KRs are scored from the calendar and the standups. Outcome KRs are scored from the connected metric source or, failing that, from an `asked` number. A KR with no evidence at all scores `unobserved`, not 0% and not a guess. A metric no KR names (impressions, comments, reach) is recorded in the human's words and scores nothing. Score every KR, including the ones that are embarrassing.

@@ -1,9 +1,9 @@
 ---
 title: Pricing page headline
 status: live
-kr: O2
-primary_metric: checkout rate
-baseline: 3.2%
+kr: O1
+primary_metric: lead → customer conversion
+baseline: 10%
 window_end: 2026-08-20
 ---
 
@@ -13,32 +13,32 @@ This is the file the session-start hook and the weekly retro chase. It is `live`
 
 ## Hypothesis
 
-If we replace the pricing-page headline with one that names the outcome the buyer gets in the first week, then visitors who reach the page will start checkout more often, measured as checkout rate moving from 3.2% to 4% or better, because the checkout-button test showed that naming the outcome moves this audience and the headline is the bigger lever.
+If we replace the pricing-page headline with one that names the outcome the buyer gets in the first week, then leads who reach the page will become customers more often, measured as lead → customer conversion moving from 10% to 12% or better, because the checkout-button test showed that naming the outcome moves this audience and the headline is the bigger lever.
 
 ## Which KR it moves
 
-O2. Same KR as the button test: more checkouts from the same traffic.
+O1. Same KR as the button test: more customers from the same leads.
 
 ## Audience
 
-Every visitor to the pricing page, both arms, assigned server-side. Signed-in customers excluded. Roughly 5,000 assigned a week.
+Every lead who reaches the pricing page, both arms, assigned server-side. Existing customers excluded. Roughly 5,000 assigned a week.
 
 ## Treatment
 
-Control: the existing headline. Variant: one sentence that names what changes for the buyer in week one. Button copy stays on the winning label from the previous test. Nothing else changes.
+Control: the existing headline. Variant: one sentence that names what changes for the buyer in week one. Button copy stays on the winning label from the previous test in both arms. Nothing else changes.
 
 ## Baseline snapshot
 
-3.2% checkout rate, from the control arm of the button test plus the following week, taken 2026-07-28.
+10.0% lead → customer conversion, the pre-test figure this quarter's KR is scored from, taken 2026-07-28. The button test's own lift is carried in both arms, so it does not confound the headline.
 
 ## Primary and secondary metric
 
-- **Primary:** checkout rate, assigned visitors to checkout started.
-- **Secondary:** purchase rate. Scroll depth past the headline.
+- **Primary:** lead → customer conversion, assigned leads to completed purchase.
+- **Secondary:** checkout starts. Scroll depth past the headline.
 
 ## Window
 
-2026-07-30 to 2026-08-20. Three weeks, same power check as the button test: about 0.8 points detectable at 5,000 a week.
+2026-07-30 to 2026-08-20. Three weeks, same power check as the button test: about 1.4 points detectable at 5,000 a week.
 
 ## Confounders, stated honestly
 
@@ -46,7 +46,7 @@ None known at launch. Anything that lands in the window goes here before the rea
 
 ## Kill criteria
 
-Stop early if checkout rate in either arm falls below 2.4% for a full week, or if the variant headline is cut off on small screens.
+Stop early if conversion in either arm falls below 7.5% for a full week, or if the variant headline is cut off on small screens.
 
 ## Status
 

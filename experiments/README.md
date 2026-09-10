@@ -31,9 +31,9 @@ Copied from `GLOSSARY.md`. Every file in this folder carries exactly these field
 ---
 title: Pricing page headline
 status: live          # planned | live | measured | killed
-kr: O2                # which key result this moves
-primary_metric: checkout rate
-baseline: 3.2%
+kr: O1                # which key result this moves
+primary_metric: lead → customer conversion
+baseline: 10%
 window_end: 2026-08-20
 ---
 ```

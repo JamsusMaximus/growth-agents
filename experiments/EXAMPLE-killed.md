@@ -1,7 +1,7 @@
 ---
 title: Welcome sequence v2
 status: killed
-kr: O1
+kr: O2
 primary_metric: reply rate to email 3
 baseline: 1.5%
 window_end: 2026-08-07
@@ -15,7 +15,7 @@ If we rewrite the five-email welcome sequence so that email 3 asks one direct qu
 
 ## Which KR it moves
 
-O1. Replies are the behaviour we control on the way to the list-growth KR.
+O2. Replies are the behaviour we control on the way to the list-growth KR.
 
 ## Audience
 

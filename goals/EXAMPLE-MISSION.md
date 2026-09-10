@@ -1,18 +1,18 @@
-mission: 2,000 people on the email list and £5,000/month from the digital product by 31 Dec
+mission: £1M ARR by 31 Dec
 
 # Mission (example)
 
-**Why this number:** at 2,000 subscribers and the current checkout rate the product pays the bills without a launch every month. Missing it means another year of selling by hand.
+**Why this number:** doubling lead → customer conversion on the leads we already get, plus a list twice the size, is the whole gap between today's run rate and £1M. Missing it means another year of selling by hand.
 
-**How it cascades:** O1 owns the list, O2 owns the checkout rate, O3 owns the publishing habit that feeds both (`okrs/EXAMPLE.md`). The monthly retro asks whether £5,000/month is closer. The weekly retro scores the KRs. The standup names today's one thing.
+**How it cascades:** O1 owns conversion, O2 owns the list (`okrs/EXAMPLE.md`). The third goal, one experiment measured or killed every week, is the habit that runs through both. The monthly retro asks whether £1M ARR is closer. The weekly retro scores the KRs. The standup names today's one thing.
 
 ## Annual goals
 
 | Goal | What "done" looks like on 31 Dec | Why it matters |
 |---|---|---|
-| Double the email list | 2,000 people, grown by publishing weekly, not by ads | The list is the only channel nobody can switch off |
-| Make the product pay the bills | £5,000/month from the digital product, three months running | Removes the launch-every-month treadmill |
-| Ship one experiment a week | 40 experiments in the log, each measured or killed | The habit that makes the other two goals compound |
+| Double lead → customer conversion | 20%, up from 10%, with a conversion test live every week of the year | Every lead we already get is worth twice as much |
+| Double the email list | 2,000 people, up from 1,000, grown by publishing weekly, not by ads | The list is the only channel nobody can switch off |
+| One experiment measured or killed every week | 52 experiments in the log, none left `live` past its window | The habit that makes the other two goals compound |
 
 ## Related
 

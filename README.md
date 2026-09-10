@@ -51,11 +51,11 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 
 ```
 Showing example files where you have no live ones yet. Run /standup to start.
-Mission   2,000 people on the email list and £5,000/month from the digital product by 31 Dec
-Quarter   O1 Grow the email list from 1,000 to 2,000 · O2 Lift the pricing page checkout rate from 3.2%
-Month     No experiment stays `live` past its window. The weekly retro is not scored while one does.
-Week      Second pricing test live by Tuesday, copy as it stands (KR2.1) · Publish Tuesday before opening the…
-Today     Second pricing test is `live` with baseline, metric and window_end filled, copy as it stands
+Mission   £1M ARR by 31 Dec
+Quarter   O1 Lift lead → customer conversion from 10% to 20% · O2 Grow the email list from 1,000 to 2,000
+Month     Ten conversion tests live at all times, none past its window.
+Week      Pricing-page headline test live by Tuesday (KR1.1) · Publish Tuesday before opening the product rep…
+Today     Pricing-page headline test live with its baseline written
 Stale     EXAMPLE-live-stale · 21 days over (example)
 ```
 
