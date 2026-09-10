@@ -26,7 +26,9 @@ Files named `TEMPLATE.md`, `EXAMPLE*.md` and `README.md`, and anything under the
 
 If the folder you are in has no `goals/`, `retros/` or `experiments/` directories, say so and stop: the standup creates them. Point the user at `/standup`.
 
-If `goals/MISSION.md` still holds `[one number]` or `[one date]` on its `mission:` line, or the only weekly, standup, OKR and experiment files are documentation, this is a first run. Say so once. The mission is not set, so section 3 is `NOT CLOSED` with the reason `mission not set`, section 5 reads "derailers not yet named" and points at `goals/derailers.md`, and no figure is asked for. Never invent a mission line and never borrow the example mission's number as the one to ask about. Everything else runs: the pre-read, the facts that exist, the reflections and the intentions are exactly what a first month needs.
+If `goals/MISSION.md` still holds `[one number]` or `[one date]` on its `mission:` line, or the only weekly, standup, OKR and experiment files are documentation, this is a first run. Say so once. The mission is not set, so section 3 is `NOT CLOSED` with the reason `mission not set`, and no figure is asked for. Never invent a mission line and never borrow the example mission's number as the one to ask about.
+
+Section 5 reads "derailers not yet named" and points at the "How to find yours" steps in `goals/derailers.md`. Everything else runs: the pre-read, the facts that exist, the reflections and the intentions are exactly what a first month needs.
 
 ## Files this skill reads and writes
 
@@ -98,7 +100,7 @@ If an interim milestone is off track, compute what would have to be true (gap, d
 
 ## Step 4 - Derailers and last month's intentions, under the coverage gate
 
-Section 5: for each of the three derailers in `goals/MISSION.md`, one verdict: `fired`, `did not fire`, or `unobserved`, from the standups' protect-against lines and the weeklies' pattern-mining. If the table still reads `[name it]`, section 5 reads "derailers not yet named" with a pointer to `goals/derailers.md`, and nothing else: no `[name it]` in the file, no verdicts borrowed from the example table. If the human's own account this session names a derailer firing, record it as `fired (asked)` with their words. It is admissible evidence, labelled, and does not need a standup to exist; below 60% coverage it is often the only evidence there is.
+Section 5: for each of the three derailers in `goals/derailers.md` (the agent's coaching instructions), one verdict: `fired`, `did not fire`, or `unobserved`, from the standups' protect-against lines and the weeklies' pattern-mining. If the table still reads `[name it]`, section 5 reads "derailers not yet named" with a pointer to the "How to find yours" steps in `goals/derailers.md`, and nothing else: no `[name it]` in the file, no verdicts borrowed from `goals/EXAMPLE-derailers.md`. If the human's own account this session names a derailer firing, record it as `fired (asked)` with their words. It is admissible evidence, labelled, and does not need a standup to exist; below 60% coverage it is often the only evidence there is.
 
 Then, for each of last month's intentions that carried a trigger ("if X happens, do Y"), score the mechanism the same way: `fired`, `occurred and was missed`, or `unobserved`.
 
@@ -138,7 +140,9 @@ An intention that failed because it was already false mid-month does not carry f
 
 ## Step 8 - Write the file
 
-Write `retros/monthly/YYYY-MM.md` from the template, every section in the template's order and nothing invented. Drop the HTML comments when writing the live file; they are instructions to you, not content, and `EXAMPLE.md` shows the written shape. Keep `## Intentions` immediately followed by its numbered list. The reflections are not a section of the file; their answers land in the pre-read gap line, the derailer verdicts and the intentions. In degraded mode, no mission figure and the reopen checkbox.
+Write `retros/monthly/YYYY-MM.md` from the template, every section in the template's order and nothing invented. Drop the HTML comments when writing the live file; they are instructions to you, not content, and `EXAMPLE.md` shows the written shape. Keep `## Intentions` immediately followed by its numbered list. The reflections are not a section of the file; their answers land in the pre-read gap line, the derailer verdicts and the intentions.
+
+In degraded mode, no mission figure and the reopen checkbox.
 
 **A version to share.** If the human asks for a version to send to someone else, the private file keeps every line, the pre-read included. Write a second file, `retros/monthly/YYYY-MM-shared.md`, state which lines were left out so the human can check, and let the human send it. Never soften the private file.
 
@@ -175,5 +179,5 @@ The file ends with this table, whose rows match `retros/monthly/TEMPLATE.md` exa
 - [../../retros/monthly/TEMPLATE.md](../../retros/monthly/TEMPLATE.md) - the file this writes
 - [../../retros/compounding-ledger.md](../../retros/compounding-ledger.md) - the ledger Step 5 appends to
 - [../../goals/MISSION.md](../../goals/MISSION.md) - the line Step 3 checks
-- [../weekly-retro/SKILL.md](../weekly-retro/SKILL.md) - inherits the intentions
+- [../../goals/derailers.md](../../goals/derailers.md) - the table Step 4 gives verdicts on
 - [../../principles/measurement-honesty.md](../../principles/measurement-honesty.md) - why a stale close is refused

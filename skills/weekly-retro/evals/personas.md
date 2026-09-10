@@ -32,7 +32,7 @@ Five ways a human, without meaning to, turns the retro into theatre. Run the ski
 
 **A bad run:** takes "productive" at face value. Lists the rebuild as a win. Carries the two bets forward as if nothing happened.
 
-**A good run:** scores last week's bets as slipped, both `observed` from the standups. Names the derailer from the mission file ("building instead of publishing") and ties it to the standup verdicts on the spot. Makes next week's bet the smallest version that ends the pattern, not the same bet a fifth time, and asks who will be disappointed if it slips again.
+**A good run:** scores last week's bets as slipped, both `observed` from the standups. Names the derailer from `goals/derailers.md` ("building instead of publishing") and ties it to the standup verdicts on the spot. Makes next week's bet the smallest version that ends the pattern, not the same bet a fifth time, and asks who will be disappointed if it slips again.
 
 ## 5. The partial-share user
 

@@ -30,7 +30,7 @@ Most operating systems remember what you did. This one chases you until the expe
 
 ## Documentation files are never data
 
-Files named `TEMPLATE.md`, `EXAMPLE*.md`, `README.md`, and anything under the plugin's own folder are documentation. Live files are the dated or slug-named files in the folder the user opened. Skills read documentation only to learn the shape of a file, never its contents as history: an example's bets, figures, derailers and experiments belong to nobody.
+Files named `TEMPLATE.md`, `EXAMPLE*.md`, `README.md`, and anything under the plugin's own folder are documentation. Live files are the dated or slug-named files in the folder the user opened. Skills read documentation only to learn the shape of a file, never its contents as history: an example's bets, figures, derailers (`goals/EXAMPLE-derailers.md`) and experiments belong to nobody.
 
 A `[placeholder]` left in a live file means "not set". Ask for the value. Never quote the placeholder as if it were an answer, and never borrow the example's value to fill it. When only documentation exists, say so once and run first-run mode.
 

@@ -25,7 +25,9 @@ Files named `TEMPLATE.md`, `EXAMPLE*.md` and `README.md`, and anything under the
 
 If the folder you are in has no `goals/`, `retros/` or `experiments/` directories, say so and stop: the standup creates them. Point the user at `/standup`. Never create or fill files on the user's behalf in a retro.
 
-If the directories exist but the only OKR, monthly, weekly or experiment files are `TEMPLATE.md`, `EXAMPLE*.md` or `README.md`, or `goals/MISSION.md` still holds `[placeholder]` text, this is the first retro. Say so once. Do not score against the example KRs, do not read the example bets as last week's, do not gate on the example experiment, and do not borrow the example derailer table. Run the interview only, every line `asked`, mark those ledger rows `n/a` with the note `first run`, and point at `goals/okrs/TEMPLATE.md` as the thing to fill before next Friday. Write the file with the sections that have content and say plainly which are empty. Do not present a number you did not get from the human or a source in this session. Confident history where there is none destroys every retro after it.
+If the directories exist but the only OKR, monthly, weekly or experiment files are `TEMPLATE.md`, `EXAMPLE*.md` or `README.md`, or `goals/MISSION.md` still holds `[placeholder]` text, this is the first retro. Say so once.
+
+Do not score against the example KRs, do not read the example bets as last week's, do not gate on the example experiment, and do not borrow the example derailer table from `goals/EXAMPLE-derailers.md`. Run the interview only, every line `asked`, mark those ledger rows `n/a` with the note `first run`, and point at `goals/okrs/TEMPLATE.md` as the thing to fill before next Friday. Write the file with the sections that have content and say plainly which are empty. Do not present a number you did not get from the human or a source in this session. Confident history where there is none destroys every retro after it.
 
 ## Files this skill reads and writes
 
@@ -36,7 +38,8 @@ If the directories exist but the only OKR, monthly, weekly or experiment files a
 | this week's dated `retros/standups/YYYY-MM-DD.md` | verdicts, slips, coverage |
 | the latest dated `retros/monthly/YYYY-MM.md`, never `EXAMPLE.md` | `## Intentions` the week inherits |
 | the most recent dated `retros/weekly/YYYY-MM-DD.md`, never `EXAMPLE.md` | last week's bets, and the stale-item count |
-| `goals/MISSION.md` | the derailer table, for pattern-mining |
+| `goals/MISSION.md` | the year line and the annual goals |
+| `goals/derailers.md` | the derailer table, for pattern-mining |
 
 Writes one file: `retros/weekly/YYYY-MM-DD.md`, dated by the Friday it covers, using `retros/weekly/TEMPLATE.md`. Its sections, in the template's order: header (week, the month's intentions pasted in, capacity next week), 1. Experiments, 2. KR scoreboard, 3. Standup pattern-mining, `## Bets` (a numbered list of 2–3 items, which the session-start hook reads; the list starts on the line after the heading with nothing between them), 4. Staged tasks, the coverage ledger.
 
@@ -82,7 +85,7 @@ KR2.2  measured winner          0%  observed: pricing-page-headline still live, 
 
 Behaviour KRs are scored from the calendar and the standups. Outcome KRs are scored from the connected metric source or, failing that, from an `asked` number. A KR with no evidence at all scores `unobserved`, not 0% and not a guess. A metric no KR names (impressions, comments, reach) is recorded in the human's words and scores nothing. Score every KR, including the ones that are embarrassing.
 
-Then one line per objective: on trajectory or drifting, and which derailer from `goals/MISSION.md` it looks like. If that table still reads `[name it]`, say so and name no derailer; do not borrow the example table's. Stage "fill the derailer table" as a task.
+Then one line per objective: on trajectory or drifting, and which derailer from `goals/derailers.md` it looks like. If that table still reads `[name it]`, say so and name no derailer; do not borrow the example table's. Stage "fill the derailer table" as a task.
 
 ## Step 3 - Last week's bets
 

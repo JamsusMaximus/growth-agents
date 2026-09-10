@@ -37,7 +37,7 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 | Folder | What it is | Start with |
 |---|---|---|
 | `experiments/` | One folder, one template, one lifecycle: `planned → live → measured` or `killed`. The three rules the whole system enforces. | `experiments/README.md` |
-| `goals/` | The year in one line plus the big annual goals behind it, your named derailers with a recovery move each, quarterly OKRs from behaviours you control. | `goals/MISSION.md` |
+| `goals/` | The year in one line plus the annual goals behind it; quarterly OKRs from behaviours you control; your derailers, the agent's coaching notes on how you lose a week. | `goals/MISSION.md` |
 | `retros/` | Daily, weekly, monthly templates plus the compounding ledger: what now pays off with your hands off it. | `retros/weekly/TEMPLATE.md` |
 | `principles/` | One file per rule, each with the incident that created it. | `principles/README.md` |
 | `stack/` | Twenty-one tools, one page each: what for, MCP or API or CLI, setup, quirks. Vendor names live here and nowhere else. | `STACK.md` |

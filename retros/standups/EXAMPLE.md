@@ -21,7 +21,7 @@ protect: Polishing past good-enough (rewriting the headline again)
 
 - [TEMPLATE.md](TEMPLATE.md) - the blank day
 - [../weekly/EXAMPLE.md](../weekly/EXAMPLE.md) - the Friday that set bet 1
-- [../../goals/EXAMPLE-MISSION.md](../../goals/EXAMPLE-MISSION.md) - the derailer named in `protect`
+- [../../goals/EXAMPLE-derailers.md](../../goals/EXAMPLE-derailers.md) - the derailer named in `protect`
 - [../../goals/derailers.md](../../goals/derailers.md) - the universal recovery move
 
 ## Coverage ledger

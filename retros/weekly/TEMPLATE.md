@@ -26,7 +26,7 @@
 |---|---|---|---|
 | Mon | [from standup] | landed / slipped / pending | [asked] |
 
-**Which slip repeated?** [name it, and which derailer it belongs to; "derailers not yet named" if the table in `goals/MISSION.md` is unfilled]. **Standups with no verdict:** [list; each stays at the top of the next standup until closed].
+**Which slip repeated?** [name it, and which derailer it belongs to; "derailers not yet named" if the table in `goals/derailers.md` is unfilled]. **Standups with no verdict:** [list; each stays at the top of the next standup until closed].
 
 ## Bets
 
@@ -49,10 +49,10 @@ Dropped: [what was left off, and "does not move a KR"].
 ## Related
 
 - [EXAMPLE.md](EXAMPLE.md) - a filled week
-- [../monthly/TEMPLATE.md](../monthly/TEMPLATE.md) - where the intentions come from
 - [../standups/TEMPLATE.md](../standups/TEMPLATE.md) - the daily trail this mines
 - [../../goals/okrs/TEMPLATE.md](../../goals/okrs/TEMPLATE.md) - the KRs scored above
 - [../../experiments/TEMPLATE.md](../../experiments/TEMPLATE.md) - the frontmatter the stale check reads
+- [../../goals/derailers.md](../../goals/derailers.md) - the table the repeated slip is matched against
 
 ## Coverage ledger
 

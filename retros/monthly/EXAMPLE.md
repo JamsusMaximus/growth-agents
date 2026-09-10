@@ -54,6 +54,7 @@ Mission: 2,000 people on the email list and £5,000/month from the digital produ
 - [../weekly/EXAMPLE.md](../weekly/EXAMPLE.md) - the Friday that inherits these intentions
 - [../compounding-ledger.md](../compounding-ledger.md) - the row checked above
 - [../../goals/EXAMPLE-MISSION.md](../../goals/EXAMPLE-MISSION.md) - the line tested in section 3
+- [../../goals/EXAMPLE-derailers.md](../../goals/EXAMPLE-derailers.md) - the three rows section 5 gives verdicts on
 
 ## Coverage ledger
 

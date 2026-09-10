@@ -5,7 +5,7 @@
 
 ## Objectives
 
-Two to four. Column one is the id, column two the outcome, column three the derailer most likely to eat it. The session-start hook reads the first two rows.
+Two to four. Column one is the id, column two the outcome, column three the derailer from `../derailers.md` most likely to eat it. The session-start hook reads the first two rows.
 
 | Id | Objective | Watch out for |
 |---|---|---|
@@ -40,5 +40,6 @@ If you're in a team: one owner per KR, named in a fourth column. A KR with two o
 
 - [EXAMPLE.md](EXAMPLE.md) - a filled quarter
 - [../MISSION.md](../MISSION.md) - the line these serve
+- [../derailers.md](../derailers.md) - the "watch out for" column comes from here
 - [../../retros/weekly/TEMPLATE.md](../../retros/weekly/TEMPLATE.md) - the Friday scoreboard
 - [../../experiments/TEMPLATE.md](../../experiments/TEMPLATE.md) - what an outcome KR points at

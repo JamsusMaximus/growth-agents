@@ -20,7 +20,7 @@ It is short in what it says and complete in what it checks. Cut words, never sou
 
 ## Documentation is never data
 
-Files named `TEMPLATE.md`, `EXAMPLE*.md` and `README.md`, and anything under the plugin's own folder, are documentation. Live files are the dated or slug-named files in the folder the user opened. Read documentation to learn the shape of a file, never as history: the example week's bets, the example mission's derailers and the example standup's date belong to nobody. A `[placeholder]` left in a live file means "not set": ask for the value, never quote the placeholder, never borrow the example's. The hook applies the same rule (`hooks/session-start.sh`).
+Files named `TEMPLATE.md`, `EXAMPLE*.md` and `README.md`, and anything under the plugin's own folder, are documentation. Live files are the dated or slug-named files in the folder the user opened. Read documentation to learn the shape of a file, never as history: the example week's bets, the example derailer table and the example standup's date belong to nobody. A `[placeholder]` left in a live file means "not set": ask for the value, never quote the placeholder, never borrow the example's. The hook applies the same rule (`hooks/session-start.sh`).
 
 ## First run
 
@@ -34,7 +34,8 @@ On a first run every file source in the coverage ledger reads `n/a` with the not
 
 | Reads | Why |
 |---|---|
-| `goals/MISSION.md` | the derailer table, for the protect-against line |
+| `goals/MISSION.md` | the year line and the annual goals |
+| `goals/derailers.md` | the derailer table, for the protect-against line |
 | the current `goals/okrs/*.md`, never `TEMPLATE.md` or `EXAMPLE.md` | which objective wins when two collide |
 | the latest dated `retros/monthly/YYYY-MM.md`, never `EXAMPLE.md` | `## Intentions`, the month's primary |
 | the latest dated `retros/weekly/YYYY-MM-DD.md`, never `EXAMPLE.md` | `## Bets`, the week's 2–3 commitments |
@@ -74,7 +75,7 @@ Check every source below, in one pass, before saying anything about today. A sou
 | Experiments folder | `status` and `window_end` of every live file | stale work |
 | Standups folder | yesterday's file, and the gap length | Step 1 |
 | Retro files | the week's `## Bets` and the month's `## Intentions` | what today must serve |
-| Mission and OKRs | the derailer table; which objective wins | Steps 4 and 5 |
+| Goals folder | the derailer table (`goals/derailers.md`); which objective wins (the OKRs) | Steps 4 and 5 |
 
 Each slot maps to whatever tool the user has connected. For every slot with nothing connected, ask one combined question ("calendar, anything due, anyone waiting on a reply, a number you are watching: anything I should know?") and label each answer `asked`. Never ask more than one question for the whole of Step 2, and do not stack the source question, the bet check and the derailer check into an interrogation.
 
@@ -108,9 +109,9 @@ One thing. If the human offers three, ask which one they would keep if the other
 
 ## Step 5 - Protect against
 
-Read the derailer table in `goals/MISSION.md`.
+Read the derailer table in `goals/derailers.md`. It is the agent's coaching instructions.
 
-If any row still reads `[name it]`, the table is unfilled. Do not infer a derailer from the day and do not borrow one from `goals/EXAMPLE-MISSION.md`. Ask once, "how do you usually lose a day like this?", write the answer labelled `asked`, write the recovery move as "not defined; derailer table empty", and point at `goals/derailers.md` for next time. Never write `[name it]` into a live file.
+If any row still reads `[name it]`, the table is unfilled. Do not infer a derailer from the day and do not borrow one from `goals/EXAMPLE-derailers.md`. Ask once, "how do you usually lose a day like this?", write the answer labelled `asked`, write the recovery move as "not defined; derailer table empty", and point at the "How to find yours" steps in `goals/derailers.md` for next time. Never write `[name it]` into a live file.
 
 If the table is filled, name the derailer most likely to eat today, with its tell, and the recovery move if it fires. Infer it from the day (a full inbox, a blank calendar, a task list shaped like one of the tells) and ask the human whether that reading is right. Where the inference and the answer disagree, the answer wins and you record both.
 
@@ -169,6 +170,6 @@ The file ends with the template's table, filled every run, one row per source. T
 
 - [../../retros/standups/TEMPLATE.md](../../retros/standups/TEMPLATE.md) - the file this writes
 - [../weekly-retro/SKILL.md](../weekly-retro/SKILL.md) - where repeated slips become bets
-- [../../goals/MISSION.md](../../goals/MISSION.md) - the derailer table
+- [../../goals/derailers.md](../../goals/derailers.md) - the derailer table this reads for the protect-against line
 - [../../experiments/README.md](../../experiments/README.md) - the status lifecycle the stale check reads
 - [../../principles/coverage-ledger.md](../../principles/coverage-ledger.md) - why the ledger is never optional

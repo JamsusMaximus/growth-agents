@@ -2,7 +2,7 @@
 date: YYYY-MM-DD
 must_be_true: [the one thing that must be true by tonight]
 verdict: pending
-protect: [the derailer from goals/MISSION.md most likely to fire today]
+protect: [the derailer from goals/derailers.md most likely to fire today]
 ---
 
 # Standup - [date]
@@ -13,7 +13,7 @@ protect: [the derailer from goals/MISSION.md most likely to fire today]
 
 **Must be true by tonight:** [one thing]. Smallest version that counts: [one line]. Advances: bet [n] from `../weekly/<date>.md`.
 
-**Protect against:** [which derailer from `goals/MISSION.md`, and today's specific form of it]. Recovery move if it fires: [from the derailer table]. <!-- If the derailer table still reads [name it], write "derailers not yet named" and ask; never quote the placeholder or borrow the example's. -->
+**Protect against:** [which derailer from `goals/derailers.md`, and today's specific form of it]. Recovery move if it fires: [from the derailer table]. <!-- If the derailer table still reads [name it], write "derailers not yet named" and ask; never quote the placeholder or borrow a row from `goals/EXAMPLE-derailers.md`. -->
 
 **Not today:** [what must not happen, if anything: the evening, the run, the reply that can wait].
 
@@ -25,8 +25,8 @@ protect: [the derailer from goals/MISSION.md most likely to fire today]
 
 - [EXAMPLE.md](EXAMPLE.md) - a filled day
 - [../weekly/TEMPLATE.md](../weekly/TEMPLATE.md) - where the bet comes from and where the verdicts go
-- [../../goals/MISSION.md](../../goals/MISSION.md) - the derailer table
-- [../../goals/derailers.md](../../goals/derailers.md) - the universal recovery move
+- [../../goals/derailers.md](../../goals/derailers.md) - the derailer table and the universal recovery move
+- [../../goals/MISSION.md](../../goals/MISSION.md) - the year line the bet serves
 
 ## Coverage ledger
 

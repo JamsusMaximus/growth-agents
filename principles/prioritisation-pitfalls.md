@@ -21,5 +21,5 @@ Cost class: a missed lead, through reputational bleed rather than lost work.
 
 - [prioritisation-rubric.md](prioritisation-rubric.md) - the table this list guards
 - [how-to-work-with-me.md](how-to-work-with-me.md) - pitfall 8 as a standing permission
-- [../goals/derailers.md](../goals/derailers.md) - named failure modes and their recovery moves
+- [../goals/derailers.md](../goals/derailers.md) - the agent's coaching instructions: named failure modes and their recovery moves
 - [../retros/weekly/TEMPLATE.md](../retros/weekly/TEMPLATE.md) - where the checklist appears

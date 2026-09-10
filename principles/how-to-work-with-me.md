@@ -31,6 +31,6 @@ Agent, you have standing permission to:
 ## Related
 
 - [prioritisation-pitfalls.md](prioritisation-pitfalls.md) - pitfall 8 is the failure mode most people write here
-- [../goals/derailers.md](../goals/derailers.md) - the failure mode with its recovery move
+- [../goals/derailers.md](../goals/derailers.md) - the agent's coaching instructions: each failure mode with its tell and recovery move
 - [../goals/MISSION.md](../goals/MISSION.md) - the number the bets serve
 - [../retros/standups/TEMPLATE.md](../retros/standups/TEMPLATE.md) - the `protect` line, daily

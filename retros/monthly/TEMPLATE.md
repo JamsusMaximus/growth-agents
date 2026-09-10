@@ -43,11 +43,11 @@ Mission: [paste the line, or "not set"]. Needed per month from here: [arithmetic
 
 ## 5. Derailers
 
-<!-- For each of the three in `goals/MISSION.md`: fired / did not fire / unobserved. Coverage gate: below 60% standup coverage, "did not fire" is not an available verdict; the absence of evidence is `unobserved`, never a clean month. If the table still reads [name it], write "derailers not yet named" and nothing else. -->
+<!-- For each of the three in `goals/derailers.md`: fired / did not fire / unobserved. Coverage gate: below 60% standup coverage, "did not fire" is not an available verdict; the absence of evidence is `unobserved`, never a clean month. If the table still reads [name it], write "derailers not yet named" and nothing else. -->
 
 | Derailer | Verdict | Evidence |
 |---|---|---|
-| [from `goals/MISSION.md`] | fired / did not fire / unobserved | [standup lines, weekly pattern-mining, or the human's own words (asked)] |
+| [from `goals/derailers.md`] | fired / did not fire / unobserved | [standup lines, weekly pattern-mining, or the human's own words (asked)] |
 
 ## Intentions
 
@@ -64,6 +64,7 @@ Mission: [paste the line, or "not set"]. Needed per month from here: [arithmetic
 - [../weekly/TEMPLATE.md](../weekly/TEMPLATE.md) - inherits the intentions
 - [../compounding-ledger.md](../compounding-ledger.md) - the admission test
 - [../../goals/MISSION.md](../../goals/MISSION.md) - the year line
+- [../../goals/derailers.md](../../goals/derailers.md) - the three rows section 5 gives verdicts on
 
 ## Coverage ledger
 
