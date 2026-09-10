@@ -51,7 +51,7 @@ Report what you found as one row per level, **year · quarter · month · week �
 
 Ask about the levels Step 4 writes (the year, the quarter, experiments) and about the numbers, which are the likeliest to have a home that is not a level at all. Report month and week as found, stale or absent and move on; the retros own those files, and an answer about them goes to question 8 as a candidate ritual, not into a file.
 
-If a connected tool holds them, read them and cite the tool, the page and the date. If they exist but the tool is not connected, ask for a paste or an export and treat it like a file. A paste that is not already the shape you asked for (a task list where objectives were asked for) is evidence for the interview, never text to copy into a live file; say so. Only when the answer is "nowhere" does the interview write them from scratch.
+If a connected tool holds them, read them and cite the tool, the page and the date. If they exist but the tool is not connected, ask for a paste or an export and treat it like a file. A paste that is not already the shape you asked for (a task list where objectives were asked for) is evidence for the interview, never text to copy into a live file; say so. Only when the answer is "nowhere" does the interview write them from scratch. There is a fourth answer worth naming: "sort of, in an informal file". Treat it as "nowhere" for the plan itself, and take the file to question 8 as a candidate ritual rather than dropping it.
 
 One more thing to watch in the scan: **matches inside a subfolder that repeats per named entity** (`clients/*/`, `accounts/*/`, `portfolios/*/`) belong to that entity, not to the person who opened the folder. Report them that way and say so.
 
@@ -99,7 +99,7 @@ Rules while interviewing: one question per turn, except question 4; offer a defa
 
 ## Step 4 - Write the files
 
-Create the folders if absent, then write, in this order, from the templates in the plugin with all HTML comments and template instruction prose dropped. Keep the frontmatter, headings and tables; **rewrite each Related list so every link resolves inside the user's folder**, since the templates link to EXAMPLE files that exist only in the plugin.
+Create the folders if absent, then write, in this order, from the templates in the plugin with all HTML comments and template instruction prose dropped. **That includes instruction sentences buried inside a section you otherwise filled in**, not just the comments at the top: an answered one goes, an unanswered one is replaced by an explicit open question. A template's own instructions must never sit in a live file. Keep the frontmatter, headings and tables; **rewrite each Related list so every link resolves inside the user's folder**, since the templates link to EXAMPLE files that exist only in the plugin.
 
 - `goals/MISSION.md` with the `mission:` line first (the hook reads it)
 - `goals/okrs/<year>-q<n>.md` with `| O1 | ... |` rows and the KR table. Keep each objective under about forty characters; the hook prints the first two on one line and trims at a hundred. **If fewer than four weeks remain in the calendar quarter and no live file exists for it, write next quarter's file and say so. If a live file for this quarter already exists, write next quarter's to `goals/okrs/next/` and say that the hook and the retros read the newest file in `goals/okrs/`, so it stays there until the quarter starts. Never overwrite a live quarter file.**
@@ -124,7 +124,7 @@ A re-run is a quarter boundary, not a fresh setup. Say so once, then skip the pr
 
 Two things to check on the way through. List every `planned` or `live` experiment with its `kr:` beside the new objective table and ask which new id each one serves, then write back that one field and nothing else; an id that now points at a different objective is a silent mis-score every Friday. And take no baseline from the quarter that is ending: for a file written before its quarter begins, every outcome KR is `not read`, even where Step 0 found a dated readout.
 
-If you're in a team: run it once per person in their own folder; share `goals/MISSION.md` and `experiments/`.
+Teams come in two shapes and the answer differs. **One shared repo** (one `derailers.md`, one `experiments/`): run it once, fill only the rows the person in front of you can answer for themselves, and say in `PROFILE.md` which rows are still open and whose turn is next. **A folder each**: run it once per person, and share `goals/MISSION.md` and `experiments/` between them.
 
 ## Related
 
