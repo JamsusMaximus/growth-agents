@@ -10,6 +10,7 @@ Each hire is a skill you invoke. Roles, never people.
 | Head of growth | `/weekly-retro` | every Friday | the quarter's OKRs, this week's standups, `experiments/` | `retros/weekly/<date>.md` | every experiment past its window is measured or killed before the week is scored |
 | The board | `/monthly-retro` | first week of the month | the mission, the quarter, the month's weeklies, the compounding ledger (`retros/compounding-ledger.md`: what shipped and still pays off with your hands off it) | `retros/monthly/<month>.md`, the ledger | the year line, not the task list |
 | Critic bench | `/multi-agent-refine` | before anything ships | the draft | the revised draft | a clean round from three or four sceptical critics |
+| Product lead | `/prd` | before anything is built | the goal, the experiment log, the codebase | a milestone-checkbox PRD | decisions captured before a line of code |
 
 ## On call
 

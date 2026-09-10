@@ -16,9 +16,10 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 | Head of growth | `/weekly-retro` | every Friday |
 | The board | `/monthly-retro` | first week of the month |
 | Critic bench | `/multi-agent-refine` | before anything ships |
+| Product lead | `/prd` | before anything is built |
 | On call | `/seo-audit`, `/tone-of-voice`, `/linkedin-post`, `/copywriting-hooks`, `/humanizer`, `/youtube-package`, `/vidiq-competitive`, `/skill-iterator` | when you ask |
 
-**The engine** (written for this repo): `morning-standup`, `weekly-retro`, `monthly-retro`, `multi-agent-refine`, `tone-of-voice`, `linkedin-post`.
+**The engine** (written for this repo): `morning-standup`, `weekly-retro`, `monthly-retro`, `multi-agent-refine`, `prd`, `tone-of-voice`, `linkedin-post`.
 
 **Installed alongside, credited:** `seo-audit` (Corey Haines, MIT, pinned at the version the scripts were written against), `copywriting-hooks` (samber, MIT), `humanizer` (blader, MIT), `youtube-package` and `vidiq-competitive` (re-authored here; need the vidIQ MCP), [`skill-iterator`](skills/skill-iterator/SKILL.md) (how to add a hire of your own; builds on Anthropic's skill-creator). The `/standup` alias lives in [commands/standup.md](commands/standup.md).
 
