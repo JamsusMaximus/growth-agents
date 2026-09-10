@@ -6,6 +6,14 @@ mission: 2,000 people on the email list and £5,000/month from the digital produ
 
 **How it cascades:** O1 owns the list, O2 owns the checkout rate, O3 owns the publishing habit that feeds both (`okrs/EXAMPLE.md`). The monthly retro asks whether £5,000/month is closer. The weekly retro scores the KRs. The standup names today's one thing.
 
+## Annual goals
+
+| Goal | What "done" looks like on 31 Dec | Why it matters |
+|---|---|---|
+| Double the email list | 2,000 people, grown by publishing weekly, not by ads | The list is the only channel nobody can switch off |
+| Make the product pay the bills | £5,000/month from the digital product, three months running | Removes the launch-every-month treadmill |
+| Ship one experiment a week | 40 experiments in the log, each measured or killed | The habit that makes the other two goals compound |
+
 ## Derailers
 
 | Derailer | How it shows up | Recovery move |

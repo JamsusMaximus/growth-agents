@@ -27,7 +27,7 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 | You get | How |
 |---|---|
 | **Experiments that finish** | Nothing goes `live` without a baseline, a metric and a window. No A/B test without a power check. Anything past its window is chased every session until it is measured or killed. |
-| **Held to your goals daily** | Year in one line → quarter OKRs → 2–3 bets a week → one thing that must be true by tonight. Next morning opens with the verdict. A slip that repeats becomes a bet, not a to-do. |
+| **Held to your goals daily** | Mission and annual goals → quarter OKRs → 2–3 bets a week → one thing that must be true by tonight. Next morning opens with the verdict. A slip that repeats becomes a bet, not a to-do. |
 | **Claude does more** | The standup reads your calendar, tasks, inbox and experiments through the tools you connect. The critic bench runs 3–4 sceptical sub-agents before anything ships. Twelve skills, one plugin. |
 | **A system that learns** | Every rule cites the incident that created it. A weekly prompt proposes edits to its own instructions; you say yes or no. |
 | **No invented numbers** | Every report ends with a ledger of what was checked. Every retro line is `observed`, `asked` or `unobserved`. Readouts are yours to type; the agent makes sure you do. |
@@ -37,7 +37,7 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 | Folder | What it is | Start with |
 |---|---|---|
 | `experiments/` | One folder, one template, one lifecycle: `planned → live → measured` or `killed`. The three rules the whole system enforces. | `experiments/README.md` |
-| `goals/` | The year in one line, your named derailers with a recovery move each, quarterly OKRs from behaviours you control. | `goals/MISSION.md` |
+| `goals/` | The year in one line plus the big annual goals behind it, your named derailers with a recovery move each, quarterly OKRs from behaviours you control. | `goals/MISSION.md` |
 | `retros/` | Daily, weekly, monthly templates plus the compounding ledger: what now pays off with your hands off it. | `retros/weekly/TEMPLATE.md` |
 | `principles/` | One file per rule, each with the incident that created it. | `principles/README.md` |
 | `stack/` | Twenty-one tools, one page each: what for, MCP or API or CLI, setup, quirks. Vendor names live here and nowhere else. | `STACK.md` |

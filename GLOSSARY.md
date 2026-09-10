@@ -6,7 +6,7 @@ Fixed vocabulary. Every file in this repo uses these names and no synonyms.
 
 | Thing | Path | Notes |
 |---|---|---|
-| Mission | `goals/MISSION.md` | The year goal in one line. Derailers live here. |
+| Mission | `goals/MISSION.md` | The year in one line, then the annual goals in detail. Derailers live here. |
 | Quarter OKRs | `goals/okrs/<year>-q<n>.md` | Template: `goals/okrs/TEMPLATE.md`. Example: `goals/okrs/EXAMPLE.md`. |
 | Monthly retro | `retros/monthly/<year>-<mm>.md` | Template and example alongside. |
 | Weekly retro | `retros/weekly/<yyyy-mm-dd>.md` | Dated by the Friday it covers. |
