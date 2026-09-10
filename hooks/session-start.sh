@@ -54,7 +54,10 @@ for f in $exp_glob; do
 done
 stale=${stale%; }
 
-[ "$ex" = 1 ] && echo "Showing example files where you have no live ones yet. Run /standup to start."
+if [ "$ex" = 1 ]; then
+  case "$mission_f" in *EXAMPLE*) echo "Showing example files where you have no live ones yet. Run /growth-setup to start.";;
+    *) echo "Showing example lines for retros you have not run yet. Run /standup to start.";; esac
+fi
 trim() { local s="$1"; if [ ${#s} -gt 100 ]; then printf '%s…' "${s:0:99}"; else printf '%s' "$s"; fi; }
 printf 'Mission   %s\n' "$(trim "${mission:-not set}")"
 printf 'Quarter   %s\n' "$(trim "${quarter:-not set}")"

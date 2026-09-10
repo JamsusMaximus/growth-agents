@@ -12,6 +12,7 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 
 | Role | Skill | When |
 |---|---|---|
+| Onboarding | `/growth-setup` | once, then each quarter |
 | Chief of staff | `/standup` | every working day |
 | Head of growth | `/weekly-retro` | every Friday |
 | The board | `/monthly-retro` | first week of the month |
@@ -19,9 +20,9 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 | Product lead | `/prd` | before anything is built |
 | On call | `/seo-audit`, `/tone-of-voice`, `/linkedin-post`, `/copywriting-hooks`, `/humanizer`, `/youtube-package`, `/vidiq-competitive`, `/skill-iterator` | when you ask |
 
-**The engine** (written for this repo): `morning-standup`, `weekly-retro`, `monthly-retro`, `multi-agent-refine`, [`prd`](skills/prd/SKILL.md), `tone-of-voice`, `linkedin-post`.
+**The engine** (written for this repo): [`growth-setup`](skills/growth-setup/SKILL.md), `morning-standup`, `weekly-retro`, `monthly-retro`, `multi-agent-refine`, [`prd`](skills/prd/SKILL.md), `tone-of-voice`, `linkedin-post`.
 
-**Installed alongside, credited:** `seo-audit` (Corey Haines, MIT, pinned at the version the scripts were written against), `copywriting-hooks` (samber, MIT), `humanizer` (blader, MIT), `youtube-package` and `vidiq-competitive` (re-authored here; need the vidIQ MCP), [`skill-iterator`](skills/skill-iterator/SKILL.md) (how to add a hire of your own; builds on Anthropic's skill-creator). The `/standup` alias lives in [commands/standup.md](commands/standup.md).
+**Installed alongside, credited:** `seo-audit` (Corey Haines, MIT, pinned at the version the scripts were written against), `copywriting-hooks` (samber, MIT), `humanizer` (blader, MIT), `youtube-package` and `vidiq-competitive` (re-authored here; need the vidIQ MCP), [`skill-iterator`](skills/skill-iterator/SKILL.md) (how to add a hire of your own; builds on Anthropic's skill-creator). The `/standup` and `/growth-setup` aliases live in [commands/standup.md](commands/standup.md) and [commands/growth-setup.md](commands/growth-setup.md).
 
 ## What changes in your first month
 
@@ -51,7 +52,7 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 3. Open Claude Code in the folder where your goals and experiments will live. The first session prints this from the example files:
 
 ```
-Showing example files where you have no live ones yet. Run /standup to start.
+Showing example files where you have no live ones yet. Run /growth-setup to start.
 Mission   £1M ARR by 31 Dec
 Quarter   O1 Lift lead → customer conversion from 10% to 20% · O2 Grow the email list from 1,000 to 2,000
 Month     Ten conversion tests live at all times, none past its window.
@@ -60,7 +61,7 @@ Today     Pricing-page headline test live with its baseline written
 Stale     EXAMPLE-live-stale · 21 days over (example)
 ```
 
-4. Type `/standup`. It creates `goals/`, `retros/` and `experiments/` from the templates and asks you one question: what must be true by tonight?
+4. Type `/growth-setup`. Rapid mode takes five minutes and five questions; full mode is an hour-long interview on your goals. It reads what is already in the folder first, picks a role profile (solo, growth lead, product marketing, SEO, content) and writes your mission, OKRs, derailers and first experiment. Then `/standup` each morning.
 
 Prefer to clone? `git clone`, open the folder in Claude Code, and the same hook runs from `.claude/settings.json`.
 

@@ -6,6 +6,7 @@ Each hire is a skill you invoke. Roles, never people.
 
 | Role | Skill | Cadence | Reads | Writes | Holds you to |
 |---|---|---|---|---|---|
+| Onboarding | `/growth-setup` | once, then each quarter | the folder you opened, your answers | mission, OKRs, derailers, first experiment, `PROFILE.md` | a role profile and a first experiment before anything else runs |
 | Chief of staff | `/standup` (`morning-standup`) | every working day | yesterday's standup, `experiments/`, and whatever calendar, task or analytics tool you have connected (none by default; see `STACK.md`) | `retros/standups/<date>.md` | one thing that must be true by tonight, and a verdict on yesterday's |
 | Head of growth | `/weekly-retro` | every Friday | the quarter's OKRs, this week's standups, `experiments/` | `retros/weekly/<date>.md` | every experiment past its window is measured or killed before the week is scored |
 | The board | `/monthly-retro` | first week of the month | the mission, the quarter, the month's weeklies, the compounding ledger (`retros/compounding-ledger.md`: what shipped and still pays off with your hands off it) | `retros/monthly/<month>.md`, the ledger | the year line, not the task list |

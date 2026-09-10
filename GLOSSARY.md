@@ -17,6 +17,7 @@ Fixed vocabulary. Every file in this repo uses these names and no synonyms.
 | Principle | `principles/<slug>.md` | One rule per file. |
 | Skill | `skills/<name>/SKILL.md` | One folder per skill. |
 | Tool page | `stack/<tool>.md` | One per tool in `STACK.md`. |
+| Profile | `PROFILE.md` | Written by `/growth-setup`: role, the hires that matter, stack pages to read first. |
 
 Dated files (`YYYY-MM-DD.md`) are ignored by git in this repo so your live files never get committed by accident. Templates and examples are the only dated-looking files that ship.
 

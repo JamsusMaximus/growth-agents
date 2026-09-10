@@ -6,6 +6,7 @@ Most operating systems remember what you did. This one chases you until the expe
 
 | When you are asked | Read, in this order |
 |---|---|
+| "Set this up for me" / first run | `skills/growth-setup/SKILL.md`, then the folder you are in before any question |
 | "What should I do today?" | `goals/MISSION.md` → the current `goals/okrs/*.md` → the latest `retros/weekly/*.md` → yesterday's `retros/standups/*.md` |
 | "Run the weekly retro" | `skills/weekly-retro/SKILL.md` → `experiments/*.md` (stale first) → this week's standups → the current OKRs |
 | "Is experiment X done?" | `experiments/<slug>.md` frontmatter (`status`, `window_end`) → the weekly retro that last mentioned it |

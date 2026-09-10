@@ -28,7 +28,7 @@ Column key: **MCP** = a Claude Code connector exists; **API** = call it from a s
 | Cloudflare Stream | Hosting paid content: chapters, recordings | API | A new serving host must also be added to your CSP `media-src` | [cloudflare-stream.md](stack/cloudflare-stream.md) |
 | Magnific | Image generation and upscaling for thumbnails | MCP | Wait for a creation to finish before chaining it into the next call | [magnific.md](stack/magnific.md) |
 
-Every page follows the same shape: what it is for in this system, which access path to prefer and why, setup in numbered steps (env var names only, never values), how James uses it, quirks, related.
+Every page follows the same shape: what it is for in this system, which access path to prefer and why, setup in numbered steps (env var names only, never values), how this system uses it, quirks, related.
 
 If you're in a team: one person owns each row and its keys. Rotate a key and update the row in the same commit.
 

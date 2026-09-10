@@ -24,7 +24,7 @@ Files named `TEMPLATE.md`, `EXAMPLE*.md` and `README.md`, and anything under the
 
 ## First run
 
-If the folder you are in has no `goals/`, `retros/` or `experiments/` directories, say so and stop: the standup creates them. Point the user at `/standup`.
+If the folder you are in has no `goals/`, `retros/` or `experiments/` directories, say so and stop: the standup creates them. Point the user at `/growth-setup`.
 
 If `goals/MISSION.md` still holds `[one number]` or `[one date]` on its `mission:` line, or the only weekly, standup, OKR and experiment files are documentation, this is a first run. Say so once. The mission is not set, so section 3 is `NOT CLOSED` with the reason `mission not set`, and no figure is asked for. Never invent a mission line and never borrow the example mission's number as the one to ask about.
 

@@ -26,7 +26,7 @@ Files named `TEMPLATE.md`, `EXAMPLE*.md` and `README.md`, and anything under the
 
 First-run mode fires when the folder you are in has no `goals/`, `retros/` or `experiments/` directories, **or** when those folders hold only `TEMPLATE.md`, `EXAMPLE*.md` and `README.md` files. Say so once ("only the plugin's templates and examples exist here, so this is a first run") and do not say it again during the session.
 
-If the directories are missing, create them now from the plugin's templates before doing anything else: copy `goals/MISSION.md`, `goals/okrs/TEMPLATE.md`, `retros/*/TEMPLATE.md` and `experiments/TEMPLATE.md` from the plugin root (`$CLAUDE_PLUGIN_ROOT`, or this repo if you cloned it) into the same paths here. Tell the user which files you created and that the examples in the plugin show what filled-in ones look like. Do not fill anything in for them.
+If the directories are missing, offer `/growth-setup` first; if the user prefers to skip it, create them now from the plugin's templates before doing anything else: copy `goals/MISSION.md`, `goals/okrs/TEMPLATE.md`, `retros/*/TEMPLATE.md` and `experiments/TEMPLATE.md` from the plugin root (`$CLAUDE_PLUGIN_ROOT`, or this repo if you cloned it) into the same paths here. Tell the user which files you created and that the examples in the plugin show what filled-in ones look like. Do not fill anything in for them.
 
 On a first run every file source in the coverage ledger reads `n/a` with the note `first run`. There is no yesterday, no bet and no derailer table to test against; the steps below say what to write in each place instead.
 

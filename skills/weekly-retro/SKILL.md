@@ -23,7 +23,7 @@ Files named `TEMPLATE.md`, `EXAMPLE*.md` and `README.md`, and anything under the
 
 ## First run
 
-If the folder you are in has no `goals/`, `retros/` or `experiments/` directories, say so and stop: the standup creates them. Point the user at `/standup`. Never create or fill files on the user's behalf in a retro.
+If the folder you are in has no `goals/`, `retros/` or `experiments/` directories, say so and stop: the standup creates them. Point the user at `/growth-setup`. Never create or fill files on the user's behalf in a retro.
 
 If the directories exist but the only OKR, monthly, weekly or experiment files are `TEMPLATE.md`, `EXAMPLE*.md` or `README.md`, or `goals/MISSION.md` still holds `[placeholder]` text, this is the first retro. Say so once.
 
