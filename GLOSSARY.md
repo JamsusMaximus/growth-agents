@@ -6,7 +6,7 @@ Fixed vocabulary. Every file in this repo uses these names and no synonyms.
 
 | Thing | Path | Notes |
 |---|---|---|
-| Mission | `goals/MISSION.md` | One line, one number, one date. Derailers live here. |
+| Mission | `goals/MISSION.md` | The year goal in one line. Derailers live here. |
 | Quarter OKRs | `goals/okrs/<year>-q<n>.md` | Template: `goals/okrs/TEMPLATE.md`. Example: `goals/okrs/EXAMPLE.md`. |
 | Monthly retro | `retros/monthly/<year>-<mm>.md` | Template and example alongside. |
 | Weekly retro | `retros/weekly/<yyyy-mm-dd>.md` | Dated by the Friday it covers. |
@@ -23,7 +23,7 @@ Dated files (`YYYY-MM-DD.md`) are ignored by git in this repo so your live files
 
 | Field | Meaning | Where |
 |---|---|---|
-| `mission` | The one-line year goal with a number and a date | MISSION.md |
+| `mission` | The year goal in one line | MISSION.md |
 | `derailer` | A named failure mode with a recovery move | MISSION.md |
 | `objective` | A quarter-level outcome (O1, O2 ...) | OKRs |
 | `kr` | A key result; prefer behaviours you control | OKRs, experiments |

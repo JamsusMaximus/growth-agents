@@ -32,7 +32,7 @@ If `goals/MISSION.md` still holds `[one number]` or `[one date]` on its `mission
 
 | Reads | Why |
 |---|---|
-| `goals/MISSION.md` | the mission line, one number and one date |
+| `goals/MISSION.md` | the mission line |
 | the current `goals/okrs/*.md`, never `TEMPLATE.md` or `EXAMPLE.md` | objectives, for the drift check |
 | this month's dated `retros/weekly/YYYY-MM-DD.md` | KR scores, coverage counts, slips |
 | this month's dated `retros/standups/YYYY-MM-DD.md` | coverage, for the gate |
