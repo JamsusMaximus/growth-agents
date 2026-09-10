@@ -2,7 +2,9 @@
 
 **Most operating systems remember what you did. This one chases you until the experiment is measured or killed.**
 
-Install it, open Claude Code, and before you type a word it tells you which experiment is overdue. Run the weekly retro and it refuses to score your week until that experiment has a result or a written kill. That is the whole product. Everything else exists to make it stick.
+- Open Claude Code: before you type a word, it tells you which experiment is overdue.
+- Run `/weekly-retro`: it refuses to score the week until that experiment has a result or a written kill.
+- Everything else in here exists to make that stick.
 
 ## Install (2 minutes, inside Claude Code)
 
@@ -26,13 +28,13 @@ Prefer to clone? `git clone`, open the folder in Claude Code, and the same hook 
 
 ## What changes in your first month
 
-1. **You run experiments that can finish.** Nothing goes `live` without a baseline, a metric and a window written down. No A/B test without a power check that says it can conclude. Half-finished tests stop piling up because the system will not let you start one that way.
-2. **You are held to your goals every day, not every quarter.** The year is one line with a number and a date. The quarter is two to four objectives with behaviours you control. The week picks two or three bets. Each morning asks for the one thing that must be true by tonight, and the next morning opens with a verdict on it. Slips that repeat become a bet, not a to-do.
-3. **Claude does more of the work.** The standup reads your calendar, tasks and inbox through whatever you have connected, and your experiments folder always. The critic bench runs three or four sceptical sub-agents over anything before it ships and stops when a round comes back clean. Twelve skills cover the day, the week, the month, SEO, video research, copy, voice and the gate before you post.
-4. **The system learns.** Every rule in `principles/` cites the incident that created it, and a weekly prompt proposes edits to its own instructions, applied only when you say yes.
-5. **You stay honest.** Every report ends with a ledger of what was checked and what was not. Every retro line is labelled observed, asked or unobserved. No number gets invented.
-
-Readouts are yours to type. The agent's job is to make sure you do.
+| You get | How |
+|---|---|
+| **Experiments that finish** | Nothing goes `live` without a baseline, a metric and a window. No A/B test without a power check. Anything past its window is chased every session until it is measured or killed. |
+| **Held to your goals daily** | Year in one line → quarter OKRs → 2–3 bets a week → one thing that must be true by tonight. Next morning opens with the verdict. A slip that repeats becomes a bet, not a to-do. |
+| **Claude does more** | The standup reads your calendar, tasks, inbox and experiments through the tools you connect. The critic bench runs 3–4 sceptical sub-agents before anything ships. Twelve skills, one plugin. |
+| **A system that learns** | Every rule cites the incident that created it. A weekly prompt proposes edits to its own instructions; you say yes or no. |
+| **No invented numbers** | Every report ends with a ledger of what was checked. Every retro line is `observed`, `asked` or `unobserved`. Readouts are yours to type; the agent makes sure you do. |
 
 ## The team
 
@@ -60,10 +62,6 @@ Each hire is a skill you invoke. Roles, never people. Full roster with what each
 | `principles/` | One file per rule, each with the incident that created it. | `principles/README.md` |
 | `stack/` | Twenty-one tools, one page each: what for, MCP or API or CLI, setup, quirks. Vendor names live here and nowhere else. | `STACK.md` |
 | `reference/` | The self-improvement prompt, path-scoped rules with the check that proves they load, a link checker. | `reference/README.md` |
-
-## What this is not
-
-Not a knowledge base. Not a dashboard. Not a course. Nothing in it sends email, posts, or writes outside your folder; the agent drafts and you send.
 
 ## Can I use this at work?
 
