@@ -16,7 +16,7 @@ Prefer the Personal API from scripts that save transcripts to dated files; that 
 4. Save transcripts to a dated folder per meeting series, gitignored.
 5. Match a meeting to a company or person by attendee email domain, not by title; generic titles repeat.
 
-## How James uses it
+## How this system uses it
 
 The standup pulls yesterday's notes and lists anything promised, with who and the implied deadline, then cross-checks against tasks and inbox. The weekly retro reads the week's calls for commitments and repeated themes. A transcript script files each call into a dated folder.
 

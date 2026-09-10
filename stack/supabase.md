@@ -16,7 +16,7 @@ Prefer the CLI for schema (link, migrate, push) and the JS client from scripts w
 4. Keep every schema change as a committed migration in the same PR that needs it. Never apply SQL to production by hand.
 5. Export the database password into the shell before `db push`; it does not read your env file.
 
-## How James uses it
+## How this system uses it
 
 The purchase webhook writes the customer row, and that row is what "did they buy" means. Purchase rows and completion counts feed the retro.
 

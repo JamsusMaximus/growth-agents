@@ -19,7 +19,7 @@ Prefer the MCP connector: read-only questions ("what is on Thursday", "find a fr
 2. Confirm the agent can list your calendars and read one event.
 3. If you use a booking tool, keep it separate. It owns availability; the calendar owns your blocks.
 
-## How James uses it
+## How this system uses it
 
 The standup checks the day can hold the one thing that must be true. The retro compares the week's bets with the blocks that existed for them and names any bet that had no time reserved.
 

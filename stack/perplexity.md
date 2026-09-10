@@ -16,7 +16,7 @@ The Agent API over plain `curl`. No official CLI. The old chat-completions endpo
 2. `POST https://api.perplexity.ai/v1/agent` with a JSON body of `preset` and `input`.
 3. Parse the response as described below. Test once with a question you already know the answer to.
 
-## How James uses it
+## How this system uses it
 
 A `low` call replaces a web search in most skills. Source URLs go into the output every time. Anything about a version, price or limit is settled afterwards against the vendor's own page or a package registry.
 

@@ -16,7 +16,7 @@ CLI for anything that writes: deploys, `env pull`, `env add`. The MCP server or 
 2. `vercel env pull --environment=production` into a gitignored file.
 3. Confirm CI deploys a preview on every PR and production only from the default branch.
 
-## How James uses it
+## How this system uses it
 
 Preview per PR, production from main. Variables are set with `printf`, never `echo`. Logs are read in the dashboard because the CLI stream is unreliable.
 

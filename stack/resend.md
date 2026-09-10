@@ -16,7 +16,7 @@ Prefer the API from a script with a dry-run default. The MCP exists and is fine 
 4. Give every send script `--execute`; without it, print recipients and stop.
 5. Pace multi-recipient runs over minutes, not seconds.
 
-## How James uses it
+## How this system uses it
 
 Transactional mail (receipts, magic links) goes through one helper in the app. Marketing nudges go through a script that spreads sends over time and writes a note on each CRM record in the same loop. Scheduled sends replaced a queue table for a delayed follow-up.
 

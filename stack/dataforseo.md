@@ -16,7 +16,7 @@ API only, from the audit scripts. It is pay-per-call, so every call sits behind 
 4. Run the audit script on one keyword first and read the cost field in the response before running a batch.
 5. Record the keyword set you audited in the experiment file so the readout compares like with like.
 
-## How James uses it
+## How this system uses it
 
 The SEO audit reads volume for candidate keywords and ranks pages to write or fix. A retro that considers an organic-traffic bet asks it whether the demand exists first. Keep it where it changes a decision.
 

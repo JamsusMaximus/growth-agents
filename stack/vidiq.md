@@ -15,7 +15,7 @@ MCP only, and that is the point: the skills call the tools by name and the credi
 3. Check the credit balance tool once so you know what a run costs before you start.
 4. Add your competitor set through the tool so outlier searches are scoped.
 
-## How James uses it
+## How this system uses it
 
 A competitor's video URL or a bare topic goes into the research skill, which either qualifies or kills the idea against hard rules. The packaging skill scores two or three titles against the channel and picks. Credits are not the constraint; a kill with no next action is the waste.
 

@@ -15,7 +15,7 @@ MCP. The connector's tools cover find, complete, reschedule and create, and they
 3. Decide the label or filter the standup reads for "due today" and write it into the standup skill's source list.
 4. Give every bet from the weekly retro a due date on the day you mean to do it, not the Friday it is reviewed.
 
-## How James uses it
+## How this system uses it
 
 The morning standup reads yesterday's completions and today's overdue and due tasks, then compares them with the retro's bets to name the day's likely flight into building. The weekly retro writes next week's bets as dated tasks. A missed bet shows up as an overdue task the next morning, which is the point.
 

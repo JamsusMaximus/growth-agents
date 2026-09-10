@@ -16,7 +16,7 @@ CLI, installed globally and authenticated once. It wraps the API with sensible o
 2. Run `firecrawl --status`: it shows auth, concurrency and remaining credits.
 3. Write output to `.firecrawl/` and add that folder to `.gitignore`.
 
-## How James uses it
+## How this system uses it
 
 Cheapest first. `curl` with a browser user agent is free and works on most sites. Firecrawl only when curl returns a bot challenge. The built-in web fetch tool is not used; most firewalls block it.
 

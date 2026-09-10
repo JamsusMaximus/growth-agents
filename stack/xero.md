@@ -16,7 +16,7 @@ API only. There is no CLI and the MCP options are thin. Use the OAuth app flow o
 4. Register the webhook, store `XERO_WEBHOOK_KEY`, and click "Send intent to receive" until the status shows green.
 5. Schedule a daily reconciliation that lists paid invoices and compares them with your own records.
 
-## How James uses it
+## How this system uses it
 
 The Friday retro lists overdue invoices with a chase recommendation. A webhook marks the buyer paid. A monthly reconciliation dry run catches anything the webhook missed.
 

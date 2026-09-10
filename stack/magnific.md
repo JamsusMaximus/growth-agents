@@ -16,7 +16,7 @@ MCP. It exposes generation, variation, targeted edit, upscale, a wait call and a
 2. Read the account balance once so you know the starting credit figure.
 3. Agree a per-session credit cap with the human before the first render.
 
-## How James uses it
+## How this system uses it
 
 Brief in, four to eight candidates out, every render numbered before a human sees it. The human picks; the skill recommends. The winner gets a targeted edit or two, then one upscale. Credits are read back from the balance call and logged, never counted from memory.
 

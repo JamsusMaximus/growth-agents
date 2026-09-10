@@ -16,7 +16,7 @@ Prefer the MCP for single-record search, read and write; it knows the schema and
 4. Create a stage-weights file (stage name to probability) so the forecast is reproducible.
 5. Register the webhook if you want CRM changes to fan out, and check the receiver's timeout.
 
-## How James uses it
+## How this system uses it
 
 The weekly retro pulls the pipeline with a weighted forecast and the open opportunities list. Every outbound nudge from the email tool writes a note on the person and the company. A script measures stage conversion for the retro.
 

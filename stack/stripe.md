@@ -16,7 +16,7 @@ Prefer the API from scripts for anything that has to be right: revenue read-back
 4. Store the signing secret as `STRIPE_WEBHOOK_SECRET`.
 5. Log in to the CLI with `stripe login --api-key` for the environment you mean, and check `stripe config --list` before creating any object.
 
-## How James uses it
+## How this system uses it
 
 Month-to-date revenue and purchases-per-month feed the weekly and monthly retros. Checkout metadata stamps the marketing context at purchase time so attribution survives. The purchase webhook writes the customer row and moves the CRM deal.
 

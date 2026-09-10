@@ -16,7 +16,7 @@ Prefer the v4 REST API from scripts. Kit publishes a first-party MCP, but its to
 4. Build the unsubscribe blocklist with `status=cancelled`; the `filter[...]` form is silently ignored and returns the whole list.
 5. Add a retry with backoff to your API wrapper before the first bulk run.
 
-## How James uses it
+## How this system uses it
 
 List size and weekly growth feed the retro. A provisioning script creates the tag and sequence for each new lead magnet. An audit script runs before any broadcast that must exclude a segment, and exits non-zero on a leak.
 

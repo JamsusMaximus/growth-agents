@@ -17,7 +17,7 @@ REST API from a script. No MCP. Cloudflare's `wrangler` CLI covers object storag
 3. Poll the video's status until ready, then store its uid with the chapter that plays it.
 4. Generate a signing key once; mint short-lived signed tokens per page load.
 
-## How James uses it
+## How this system uses it
 
 A script pulls a recording from the meeting tool, hands Stream the URL, polls until encoded, and opens a PR that wires the uid into the page. Every play URL is signed.
 

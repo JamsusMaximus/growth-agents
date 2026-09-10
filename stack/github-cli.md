@@ -16,7 +16,7 @@ CLI. `gh` handles auth and wraps both APIs. Drop to `gh api` when a command does
 2. Protect your default branch: require the CI check by its exact name, and require branches to be up to date before merging.
 3. One branch per task, ideally in a worktree, so the main checkout stays on main.
 
-## How James uses it
+## How this system uses it
 
 Branch, push, `gh pr create`, wait for green, ask the human to merge. Every review finding reaches one of three end states: fixed with evidence, rejected with a reason, or deferred into a document.
 

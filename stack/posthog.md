@@ -16,7 +16,7 @@ Prefer the MCP for ad-hoc questions and insight lookups. Use the API from script
 4. Set test-account filters (localhost, your own person property) so your own traffic never counts.
 5. Save one insight per KR you intend to read, and write its id into the OKR file beside the KR.
 
-## How James uses it
+## How this system uses it
 
 The weekly retro pulls landing-to-checkout conversion and the lead-magnet funnel from saved insights. Experiment readouts quote the insight, not a one-off query. A backfill script refills purchase events when a webhook was down.
 

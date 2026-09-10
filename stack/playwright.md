@@ -16,7 +16,7 @@ Prefer the MCP for one-off looks: snapshot, act, snapshot. Use the library (`pla
 2. Run one `browser_navigate` to a public page and one `browser_snapshot`. The snapshot is text; it is what the agent reads. Screenshots are for the human.
 3. Decide up front whether the agent gets a login session. Most checks do not need one.
 
-## How James uses it
+## How this system uses it
 
 Snapshot a page and read the tree instead of guessing from a screenshot. Check the live page after a deploy rather than trusting the diff. Render a local HTML report to PNG for sharing.
 

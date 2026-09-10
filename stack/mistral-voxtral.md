@@ -18,7 +18,7 @@ REST API only, from a small script. No MCP, no CLI. Batch only: no live transcri
 4. Turn on `diarize=true` and send a `context_bias` field for every proper noun the model mangles: your product, your tools, your name.
 5. Upload four files at a time, within the rate limit.
 
-## How James uses it
+## How this system uses it
 
 Point the script at a folder and walk away. Diarisation and the bias list are on by default. Multi-voice files come back grouped into speaker turns.
 

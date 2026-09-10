@@ -15,7 +15,7 @@ CLI only. `ffmpeg` transforms; `ffprobe` inspects. They are installed together.
 1. `brew install ffmpeg` (or your package manager).
 2. Check `ffmpeg -version` and `ffprobe -version` both run. No key, no account.
 
-## How James uses it
+## How this system uses it
 
 Three commands cover almost everything.
 
