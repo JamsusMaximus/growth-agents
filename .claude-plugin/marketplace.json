@@ -1,0 +1,14 @@
+{
+  "name": "growth-agents",
+  "owner": { "name": "James McAulay", "url": "https://github.com/JamsusMaximus" },
+  "metadata": { "description": "growth-agents: an operating system for a growth team of Claude agents", "version": "0.1.0" },
+  "plugins": [
+    {
+      "name": "growth-agents",
+      "source": "./",
+      "description": "A goal cascade, an experiment log that chases you until the experiment is measured or killed, and the skills that run each step.",
+      "category": "productivity",
+      "tags": ["growth", "experiments", "okrs", "retro", "standup", "skills"]
+    }
+  ]
+}

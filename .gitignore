@@ -1,0 +1,8 @@
+BUILD-BRIEF.md
+.env*
+.claude/settings.local.json
+CLAUDE.local.md
+node_modules/
+.DS_Store
+*.local.md
+**/20[0-9][0-9]-[0-9][0-9]-[0-9][0-9].md

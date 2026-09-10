@@ -1,0 +1,9 @@
+{
+  "name": "seo-audit-scripts",
+  "version": "2.0.0",
+  "description": "SEO audit scripts for Claude Code skill",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "growth-agents",
+  "version": "0.1.0",
+  "description": "An operating system for a growth team of Claude agents: a goal cascade, an experiment log that chases you, and the skills that run each step.",
+  "author": { "name": "James McAulay", "url": "https://github.com/JamsusMaximus" },
+  "homepage": "https://github.com/JamsusMaximus/growth-agents",
+  "repository": "https://github.com/JamsusMaximus/growth-agents",
+  "license": "CC-BY-NC-4.0",
+  "keywords": ["claude-code", "growth", "agents", "skills", "experiments", "okrs", "retro", "standup"],
+  "skills": "./skills",
+  "commands": ["./commands/standup.md"],
+  "hooks": "./hooks/hooks.json"
+}
