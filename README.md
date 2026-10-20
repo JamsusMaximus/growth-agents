@@ -6,6 +6,8 @@
 - Run `/weekly-retro`: it refuses to score the week until that experiment has a result or a written kill.
 - Everything else in here exists to make that stick.
 
+![The growth-agents blueprint: mission, OKRs, retros and standups cascade into every session; the team of skills, disciplined experiments, rules and guardrails, recommended tools and a self-improving harness sit around the Agentic Growth OS hub](assets/growth-agents-blueprint.png)
+
 ## The team
 
 Each hire is a skill you invoke. Roles, never people. Full roster with what each reads and writes: [ROSTER.md](ROSTER.md).
