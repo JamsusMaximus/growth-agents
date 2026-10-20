@@ -1,87 +1,114 @@
-# growth-agents
+<p align="center">
+  <img src="assets/growth-agents-banner.gif" alt="growth-agents" width="100%">
+</p>
 
-**Install this and every Claude Code session opens with your goals, this week's bets and the experiment you have let slip. When you drift, it pushes back.**
+<h2 align="center">Your coding agent opens every session with your goals, this week's bets and any experiment past its window.</h2>
 
-James McAulay ran his startup on this exact setup and took it from inception to £100k+ months in 96 days. This repo is that setup with his business data taken out, ready for yours.
+<p align="center">James McAulay used this setup to take his startup from inception to <b>£100k+ months in 96 days</b>.<br>This repo is the same setup with his business data removed.</p>
 
-Before you type a word, Claude Code tells you where you stand (example files shown):
+<p align="center"><b>Works with any coding agent</b></p>
+
+<p align="center">
+  <img src="assets/agents/claude-code.png" width="44" height="44" alt="Claude Code" title="Claude Code">&nbsp;&nbsp;
+  <img src="assets/agents/codex.png" width="44" height="44" alt="Codex" title="Codex">&nbsp;&nbsp;
+  <img src="assets/agents/hermes.png" width="44" height="44" alt="Hermes" title="Hermes">&nbsp;&nbsp;
+  <img src="assets/agents/openclaw.svg" width="44" height="44" alt="OpenClaw" title="OpenClaw">
+  <br>
+  <sub>Claude Code · Codex · Hermes · OpenClaw</sub>
+</p>
+
+<p align="center">
+  <a href="#install-growth-agents-and-set-up-your-first-week-in-five-minutes">Install</a> ·
+  <a href="#what-changes-once-growth-agents-is-installed">What changes</a> ·
+  <a href="#an-overdue-experiment-comes-back-every-session-because-james-once-left-one-live-for-ten-weeks">Why</a> ·
+  <a href="#seven-roles-run-your-week-and-each-one-is-a-skill">Roles</a> ·
+  <a href="#it-needs-no-code-and-never-sends-anything-for-you">Questions</a>
+</p>
+
+<p align="center">
+  <img src="assets/growth-agents-blueprint.gif" alt="The growth-agents blueprint: the Agentic Growth OS hub and the every-session briefing, zooming out to goals, retros, the team of skills, experiment rules, guardrails and tools" width="100%">
+  <br>
+  <sub><a href="assets/growth-agents-blueprint.png">Open the full-size diagram</a></sub>
+</p>
+
+## Install growth-agents and set up your first week in five minutes
+
+In Claude Code:
 
 ```
-Mission   £1M ARR by 31 Dec
-Quarter   O1 Lift lead → customer conversion from 10% to 20% · O2 Grow the email list from 1,000 to 2,000
-Month     Ten conversion tests live at all times, none past its window.
-Week      Pricing-page headline test live by Tuesday (KR1.1) · Publish Tuesday before opening the product rep…
-Today     Pricing-page headline test live with its baseline written
-Stale     EXAMPLE-live-stale · 21 days over (example)
+/plugin marketplace add JamsusMaximus/growth-agents
+/plugin install growth-agents@growth-agents
 ```
 
-That last line is the point. The stale experiment comes back every session, and `/weekly-retro` refuses to score the week until it has a result or a written kill.
+On Codex or another coding agent, clone this repo and open the folder in your agent.
 
-![The growth-agents blueprint: mission, OKRs, retros and standups cascade into every session; the team of skills, disciplined experiments, rules and guardrails, recommended tools and a self-improving harness sit around the Agentic Growth OS hub](assets/growth-agents-blueprint.png)
+1. Open your agent in the folder where your goals and experiments will live. The first session prints a briefing from the example files, with an example experiment 21 days past its window flagged as stale.
+2. Run `/growth-setup`. Rapid mode asks five questions and takes about five minutes. Full mode is an hour-long interview on your goals.
+3. Check the files it writes: your mission, OKRs, derailers and first experiment. It reads your folder first and picks a profile (solo, growth lead, product marketing, SEO or content).
+4. Run `/standup` each morning.
 
-## What Claude Code does differently from your first week
+## What changes once growth-agents is installed
 
-| | Claude Code on its own | Claude Code with growth-agents |
+| | Your coding agent on its own | Your coding agent with growth-agents |
 |---|---|---|
-| **Starting a session** | A blank prompt. It does whatever you ask first, even when that is a distraction. | It opens with your mission, this week's bets, tonight's must-do and anything overdue, and it says so when an ask serves none of them. |
-| **Experiments** | A test goes live and quietly expires. Three weeks later nobody can say whether it worked. | Nothing goes `live` without a baseline, a metric and a window. No A/B test without a power check. Anything past its window is chased every session until it is measured or killed. |
-| **Goals** | The annual goals sit in a doc you reopen in December. | Mission and annual goals → quarter OKRs → 2–3 bets a week → one thing that must be true by tonight. Next morning opens with the verdict. A slip that repeats becomes a bet, not a to-do. |
-| **Your tools** | You paste numbers from five tabs into the chat. | The standup reads your calendar, tasks, inbox and experiments through the tools you connect. Fourteen skills, one plugin. |
-| **Shipping** | One pass, and you find the holes after launch. | The critic bench runs 3–4 sceptical sub-agents before anything ships. |
-| **Mistakes** | You correct the same thing every week. | Every rule cites the incident that created it. A weekly prompt proposes edits to its own instructions; you say yes or no. |
-| **Numbers** | It writes "conversion up 12%" and you cannot tell where that came from. | Every report ends with a ledger of what was checked. Every retro line is `observed`, `asked` or `unobserved`. Readouts are yours to type; the agent makes sure you do. |
+| 🌅 **Starting a session** | A blank prompt. It does whatever you ask first, even when that is a distraction. | It opens with your mission, this week's bets, the one thing that must be true by tonight and anything overdue. If a request serves none of them, it tells you. |
+| 🧪 **Experiments** | A test goes live and quietly expires. Three weeks later nobody can say whether it worked. | An experiment cannot go `live` until its baseline, metric and window are written down. An A/B test needs a power check first. Anything past its window comes back every session until it is `measured` or `killed`. |
+| 🎯 **Goals** | The annual goals sit in a doc you reopen in December. | Mission → quarter OKRs → 2–3 bets a week → one thing that must be true by tonight. The next morning opens with the verdict. A slip that repeats becomes one of next week's bets. |
+| 🔌 **Your tools** | You paste numbers from five tabs into the chat. | The standup reads your calendar, tasks, inbox and experiments through the tools you connect. |
+| 🚢 **Shipping** | One pass, and you find the holes after launch. | The critic bench runs 3–4 sceptical sub-agents before anything ships. |
+| 🔁 **Mistakes** | You correct the same thing every week. | Every rule cites the incident that created it. Each week a self-improvement prompt proposes edits to the rules, and you approve or reject each one. |
+| 📏 **Numbers** | It writes "conversion up 12%" and you cannot tell where that came from. | Every report ends with a coverage ledger of what was checked. Every retro line is labelled `observed`, `asked` or `unobserved`. You type each result yourself, and it keeps asking until you do. |
 
-## Install it in two minutes, inside Claude Code
+## An overdue experiment comes back every session because James once left one live for ten weeks
 
-1. `/plugin marketplace add JamsusMaximus/growth-agents`
-2. `/plugin install growth-agents@growth-agents`
-3. Open Claude Code in the folder where your goals and experiments will live. The first session prints the example briefing above, with a nudge to run `/growth-setup`.
-4. Type `/growth-setup`. Rapid mode takes five minutes and five questions; full mode is an hour-long interview on your goals. It reads what is already in the folder first, picks a role profile (solo, growth lead, product marketing, SEO, content) and writes your mission, OKRs, derailers and first experiment. Then `/standup` each morning.
+The baseline was written down and the metric was fixed up front. Then the window closed and nobody opened the file for ten weeks. The test produced no result anyone could use.
 
-Prefer to clone? `git clone`, open the folder in Claude Code, and the same hook runs from `.claude/settings.json`.
+That is why rule 2 exists. An experiment past its window is named at the start of every session. `/weekly-retro` will not score the week until that experiment is `measured` or `killed`. The full story is in [experiments/README.md](experiments/README.md).
 
-## Seven roles run your week, each one a skill you invoke
+## Seven roles run your week, and each one is a skill
 
-Roles, never people. Full roster with what each reads and writes: [ROSTER.md](ROSTER.md).
+What each role reads and writes: [ROSTER.md](ROSTER.md).
 
 | Role | Skill | When |
 |---|---|---|
-| Onboarding | `/growth-setup` | once, then each quarter |
-| Chief of staff | `/standup` | every working day |
-| Head of growth | `/weekly-retro` | every Friday |
-| The board | `/monthly-retro` | first week of the month |
-| Critic bench | `/multi-agent-refine` | before anything ships |
-| Product lead | `/prd` | before anything is built |
-| On call | `/seo-audit`, `/tone-of-voice`, `/linkedin-post`, `/copywriting-hooks`, `/humanizer`, `/youtube-package`, `/vidiq-competitive`, `/skill-iterator` | when you ask |
+| 🧭 Onboarding | `/growth-setup` | once, then each quarter |
+| ☕ Chief of staff | `/standup` | every working day |
+| 📈 Head of growth | `/weekly-retro` | every Friday |
+| 🏛️ The board | `/monthly-retro` | first week of the month |
+| ⚖️ Critic bench | `/multi-agent-refine` | before anything ships |
+| 📋 Product lead | `/prd` | before anything is built |
+| 📟 On call | `/seo-audit`, `/tone-of-voice`, `/linkedin-post`, `/copywriting-hooks`, `/humanizer`, `/youtube-package`, `/vidiq-competitive`, `/skill-iterator` | when you ask |
 
-**The engine** (written for this repo): [`growth-setup`](skills/growth-setup/SKILL.md), `morning-standup`, `weekly-retro`, `monthly-retro`, `multi-agent-refine`, [`prd`](skills/prd/SKILL.md), `tone-of-voice`, `linkedin-post`.
+## It needs no code and never sends anything for you
 
-**Installed alongside, credited:** `seo-audit` (Corey Haines, MIT, pinned at the version the scripts were written against), `copywriting-hooks` (samber, MIT), `humanizer` (blader, MIT), `youtube-package` and `vidiq-competitive` (re-authored here; need the vidIQ MCP), [`skill-iterator`](skills/skill-iterator/SKILL.md) (how to add a hire of your own; builds on Anthropic's skill-creator). The `/standup` and `/growth-setup` aliases live in [commands/standup.md](commands/standup.md) and [commands/growth-setup.md](commands/growth-setup.md).
+- **Do I need to code?** No. Everything is Markdown files and slash commands.
+- **Will it email or post on my behalf?** No. The agent has no send capability. It drafts, and you send.
+- **I already have a task manager.** Keep it. The standup reads your tasks through the tools you connect. `stack/todoist.md` shows one setup.
+- **Does it only work in Claude Code?** No. It runs on Codex and other coding agents too. The plugin commands above are the quick install for Claude Code.
+- **Can I use it at work?** Yes, for yourself and inside your team. The CC BY-NC 4.0 licence rules out reselling the templates. See `LICENSES.md`.
 
-## Each folder holds one part of the system
+## Your goals, experiments and retros live in six plain folders
 
-| Folder | What it is | Start with |
+| Folder | What it holds | Start with |
 |---|---|---|
-| `experiments/` | One folder, one template, one lifecycle: `planned → live → measured` or `killed`. The three rules the whole system enforces. | `experiments/README.md` |
-| `goals/` | The year in one line plus the annual goals behind it; quarterly OKRs from behaviours you control; your derailers, the agent's coaching notes on how you lose a week. | `goals/MISSION.md` |
-| `retros/` | Daily, weekly, monthly templates plus the compounding ledger: what now pays off with your hands off it. | `retros/weekly/TEMPLATE.md` |
+| `experiments/` | One file per experiment, moving `planned → live → measured` or `killed`, plus the three rules the skills enforce. | `experiments/README.md` |
+| `goals/` | Your mission, quarterly OKRs and derailers (the agent's notes on how you lose a week). | `goals/MISSION.md` |
+| `retros/` | Daily, weekly and monthly templates, plus the compounding ledger of what now pays off without you. | `retros/weekly/TEMPLATE.md` |
 | `principles/` | One file per rule, each with the incident that created it. | `principles/README.md` |
-| `stack/` | Twenty-one tools, one page each: what for, MCP or API or CLI, setup, quirks. Vendor names live here and nowhere else. | `STACK.md` |
-| `reference/` | The self-improvement prompt, path-scoped rules with the check that proves they load, a link checker. | `reference/README.md` |
+| `stack/` | Twenty-one tool pages: what each is for, MCP or API or CLI, setup and quirks. | `STACK.md` |
+| `reference/` | The self-improvement prompt, path-scoped rules and a link checker. | `reference/README.md` |
 
-## You can use this at work, for yourself and inside your team
+## Eleven skills were written for this repo and three are vendored from credited authors
 
-CC BY-NC 4.0 on the original work here rules out reselling the templates; vendored skills keep their own MIT licences. See `LICENSES.md`.
+**Written here:** [`growth-setup`](skills/growth-setup/SKILL.md), `morning-standup`, `weekly-retro`, `monthly-retro`, `multi-agent-refine`, [`prd`](skills/prd/SKILL.md), `tone-of-voice`, `linkedin-post`, `youtube-package` and `vidiq-competitive` (both need the vidIQ MCP), and [`skill-iterator`](skills/skill-iterator/SKILL.md) (how to add a role of your own; builds on Anthropic's skill-creator).
 
-## Coming in v1.1: the chase fetches the number for you
-
-A readout adapter for one analytics tool, so the chase can also fetch the number.
+**Vendored, MIT:** `seo-audit` (Corey Haines, pinned at the version the scripts were written against), `copywriting-hooks` (samber) and `humanizer` (blader). Each keeps its own licence; details in `LICENSES.md`. The `/standup` and `/growth-setup` aliases live in [commands/standup.md](commands/standup.md) and [commands/growth-setup.md](commands/growth-setup.md).
 
 Built by James McAulay, who teaches this at [agentaccelerator.ai](https://agentaccelerator.ai/?ref=growth-agents).
 
 ## Related
 
-- [ROSTER.md](ROSTER.md) - the hires
+- [ROSTER.md](ROSTER.md) - who does what
 - [GLOSSARY.md](GLOSSARY.md) - the fixed vocabulary every file uses
 - [CLAUDE.md](CLAUDE.md) - the read order and the standing rules for the agent
 - [experiments/README.md](experiments/README.md) - the spine that chases
