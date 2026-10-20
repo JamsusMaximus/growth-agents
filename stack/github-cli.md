@@ -33,4 +33,4 @@ Branch, push, `gh pr create`, wait for green, ask the human to merge. Every revi
 - [STACK.md](../STACK.md)
 - [Vercel CLI](vercel-cli.md)
 - [Path-scoped rules](../reference/path-scoped-rules/README.md)
-- [Principles](../principles/README.md)
+- [Rules](../rules/README.md)

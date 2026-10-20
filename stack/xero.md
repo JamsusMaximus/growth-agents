@@ -34,4 +34,4 @@ The Friday retro lists overdue invoices with a chase recommendation. A webhook m
 - [../skills/weekly-retro/SKILL.md](../skills/weekly-retro/SKILL.md)
 - [stripe.md](stripe.md)
 - [attio.md](attio.md)
-- [../principles/README.md](../principles/README.md)
+- [../rules/README.md](../rules/README.md)

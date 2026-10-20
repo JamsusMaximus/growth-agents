@@ -34,4 +34,4 @@ The purchase webhook writes the customer row, and that row is what "did they buy
 - [stripe.md](stripe.md)
 - [posthog.md](posthog.md)
 - [../skills/weekly-retro/SKILL.md](../skills/weekly-retro/SKILL.md)
-- [../principles/README.md](../principles/README.md)
+- [../rules/README.md](../rules/README.md)

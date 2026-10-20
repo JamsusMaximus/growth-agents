@@ -1,4 +1,4 @@
-# Principles
+# Rules
 
 One rule per file. Every rule cites the incident that created it: the date, the line the human said, and what it cost. A rule with no incident is an opinion, and opinions do not get a file here.
 

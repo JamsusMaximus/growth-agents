@@ -1,6 +1,6 @@
 # Contributing
 
-Pull requests are welcome for templates, principles, stack pages and the skills in "the engine".
+Pull requests are welcome for templates, rules, stack pages and the skills in "the engine".
 
 Three rules:
 
@@ -12,5 +12,5 @@ Three rules:
 
 - [README.md](README.md) - the map
 - [GLOSSARY.md](GLOSSARY.md) - fixed vocabulary
-- [principles/README.md](principles/README.md) - the rules and their incidents
+- [rules/README.md](rules/README.md) - the rules and their incidents
 - [experiments/README.md](experiments/README.md) - the three rules the skills enforce

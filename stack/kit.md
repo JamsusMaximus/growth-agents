@@ -34,4 +34,4 @@ List size and weekly growth feed the retro. A provisioning script creates the ta
 - [resend.md](resend.md)
 - [../skills/weekly-retro/SKILL.md](../skills/weekly-retro/SKILL.md)
 - [../skills/linkedin-post/SKILL.md](../skills/linkedin-post/SKILL.md)
-- [../principles/README.md](../principles/README.md)
+- [../rules/README.md](../rules/README.md)

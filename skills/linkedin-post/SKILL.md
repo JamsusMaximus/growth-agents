@@ -173,4 +173,4 @@ from.
 - [humanizer](../humanizer/SKILL.md): the AI-tells pass behind gate row three
 - [youtube-package](../youtube-package/SKILL.md): the same gate idea for a video upload
 - [experiments/README.md](../../experiments/README.md): the readouts most posts are about
-- [principles/README.md](../../principles/README.md): why the agent never sends
+- [rules/README.md](../../rules/README.md): why the agent never sends

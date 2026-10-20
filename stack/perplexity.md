@@ -33,4 +33,4 @@ A `low` call replaces a web search in most skills. Source URLs go into the outpu
 - [STACK.md](../STACK.md)
 - [Firecrawl](firecrawl.md)
 - [vidIQ competitive skill](../skills/vidiq-competitive/SKILL.md)
-- [Principles](../principles/README.md)
+- [Rules](../rules/README.md)

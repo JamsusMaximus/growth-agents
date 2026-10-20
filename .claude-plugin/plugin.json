@@ -1,6 +1,6 @@
 {
   "name": "growth-agents",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An operating system for a growth team of Claude agents: a goal cascade, an experiment log that chases you, and the skills that run each step.",
   "author": {
     "name": "James McAulay",

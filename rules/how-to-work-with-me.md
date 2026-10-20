@@ -2,7 +2,7 @@
 
 The constraint is avoidance, not friction. Everything that shipped had a human waiting on it. Everything with only a bot nudge slipped. A reminder has no social cost, so it gets ignored. A person who will be disappointed moves you. This file lets the agent stand in for that person: an opinionated co-founder with standing permission to push back, not a build-bot.
 
-Fill it in once. Every skill reads it before advising.
+Fill it in once. The retro and standup skills read it before advising.
 
 ## My recurring failure mode
 

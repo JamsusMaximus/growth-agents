@@ -1,16 +1,20 @@
 ---
 title: [Short name for the experiment]
 status: planned       # planned | live | measured | killed
-kr: [O1]              # which key result this moves
+kr: [KR1.1]          # the key result id (KR1.1), or the objective id (O1) if no single KR fits
 primary_metric: [one metric, e.g. lead → customer conversion]
 baseline: [the number you are starting from, e.g. 10%]
-window_end: [YYYY-MM-DD]
+window_end: [YYYY-MM-DD]   # must be YYYY-MM-DD or the hook reports it unreadable
+owner: [name]         # optional, team mode: who types the readout
+power_check: [verdict]  # A/B tests: e.g. can conclude, detects 1.4 points in 3 weeks | cannot conclude in window
 ---
 
 <!--
 This file refuses to be `live` with `baseline` or `primary_metric` blank.
 If either still reads as a placeholder, status stays `planned`. The weekly
 retro checks this and will not accept a `live` file with a blank baseline.
+For an A/B test it also runs the power check and writes the verdict into
+`power_check:`; `cannot conclude` stays `planned`.
 No baseline means no experiment, only an activity.
 -->
 
@@ -59,7 +63,7 @@ Written before results. What would make you stop early: a broken funnel, a drop 
 
 ## Result
 
-Blank until the window closes. Then: primary metric, control and variant, the size of the difference, and whether the power check said it could conclude. Numbers, not adjectives.
+Blank until the window closes. Then: primary metric, control and variant, the size of the difference, the source (tool or report, and the date you read it), the sample size per arm (or "n unknown"), and whether the power check said it could conclude. A result with no source leaves the experiment `live`. Numbers, not adjectives.
 
 ## Learning
 

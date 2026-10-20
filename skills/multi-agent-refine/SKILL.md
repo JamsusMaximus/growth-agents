@@ -98,5 +98,5 @@ If the work is prose a human will read, run the humanizer skill in this plugin o
 
 - [EXAMPLE.md](EXAMPLE.md): the critics-killed-the-premise case
 - [humanizer](../humanizer/SKILL.md): the last pass on prose after a refine
-- [verified-fixed-or-not-closed](../../principles/verified-fixed-or-not-closed.md): why every HIGH and MED gets an end state
+- [verified-fixed-or-not-closed](../../rules/verified-fixed-or-not-closed.md): why every HIGH and MED gets an end state
 - [Licences](../../LICENSES.md): licence index

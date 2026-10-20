@@ -257,4 +257,4 @@ Flat files, so each can be checked independently:
 - [linkedin-post](../linkedin-post/SKILL.md): the announcement post once it is live
 - [tone-of-voice](../tone-of-voice/SKILL.md): the voice the description is written in
 - [STACK.md](../../STACK.md): the keyword and transcription tools this skill assumes
-- [principles/README.md](../../principles/README.md): why blank beats plausible
+- [rules/README.md](../../rules/README.md): why blank beats plausible
