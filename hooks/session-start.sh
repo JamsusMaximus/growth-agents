@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # growth-agents session-start hook.
-# Prints six lines: mission, quarter, month, week, today, stale experiments.
+# Prints seven lines: mission, quarter, month, week, today, live experiments (days left), stale experiments.
 #
 # Usage, any agent:  cd <your growth folder> && bash <path-to>/growth-agents/hooks/session-start.sh
 # Claude Code runs it for you at the start of every session (hooks/hooks.json).
@@ -71,7 +71,8 @@ section() { # section <file> <heading-regex> -> list items under that heading on
   awk -v h="$2" 'BEGIN{IGNORECASE=1} $0 ~ "^## " { on = (tolower($0) ~ tolower(h)); next } on && /^([0-9]+\. |- )/' "$1" 2>/dev/null | sed -E 's/^([0-9]+\. |- )//'
 }
 month="";   [ -n "$month_f" ] && month=$(section "$month_f" '^## intentions' | head -1)
-week="";    [ -n "$week_f" ] && week=$(section "$week_f" '^## bets' | head -2 | paste -sd '·' - | sed 's/·/ · /g')
+# each bet shows only its text: the " - KR1.2, smallest version: ..." tail and any "(KR1.2)" stay in the file
+week="";    [ -n "$week_f" ] && week=$(section "$week_f" '^## bets' | head -2 | sed -E 's/ +[-–] +\(?KR[0-9].*$//; s/ *\(KR[0-9][^)]*\)//; s/^(.{48}).+$/\1…/' | paste -sd '·' - | sed 's/·/ · /g')
 todayline=""; [ -n "$day_f" ] && todayline=$(grep -m1 -iE '^must_be_true:|^\*\*Must be true' "$day_f" 2>/dev/null | sed -E 's/^must_be_true: *//; s/\*\*Must be true[^:]*: *//; s/\*\*//g')
 if [ "$have_live" = 1 ]; then
   quarter=$(unset_if_placeholder "$quarter"); month=$(unset_if_placeholder "$month")
@@ -88,7 +89,7 @@ fi
 
 # --- stale experiments ------------------------------------------------------------------
 # Your experiments/ plus one level down (e.g. clients/<name>/experiments/), labelled by that folder.
-stale=""
+stale=""; live=""; planned=""
 if [ "$have_live" = 0 ]; then files=$(ls -1 "$PLUGIN"/experiments/*.md 2>/dev/null)
 else files=$(ls -1 experiments/*.md */experiments/*.md */*/experiments/*.md 2>/dev/null); fi
 for f in $files; do
@@ -96,6 +97,7 @@ for f in $files; do
   case "$f" in *TEMPLATE*|*README*) continue;; esac
   if [ "$have_live" = 1 ]; then is_doc "$f" && continue; fi
   st=$(grep -m1 -E '^status:' "$f" | awk '{print $2}')
+  if [ "$st" = "planned" ]; then planned="${planned}$(basename "$f" .md), "; continue; fi
   [ "$st" = "live" ] || continue
   we=$(grep -m1 -E '^window_end:' "$f" | awk '{print $2}')
   slug=$(basename "$f" .md)
@@ -109,6 +111,11 @@ for f in $files; do
   if ! echo "$we" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' || [ -z "$(to_epoch "$we")" ]; then
     stale="${stale}${slug} · window_end \"$we\" unreadable, use YYYY-MM-DD${tag}; "; continue
   fi
+  if ! [[ "$we" < "$today" ]]; then
+    left=$(( ( $(to_epoch "$we") - $(to_epoch "$today") ) / 86400 ))
+    lu=days; [ "$left" = 1 ] && lu=day
+    if [ "$left" = 0 ]; then live="${live}${slug} · ends today${tag}; "; else live="${live}${slug} · ends in ${left} ${lu}${tag}; "; fi
+  fi
   if [[ "$we" < "$today" ]]; then
     days=$(( ( $(to_epoch "$today") - $(to_epoch "$we") ) / 86400 ))
     unit=days; [ "$days" = 1 ] && unit=day
@@ -116,6 +123,9 @@ for f in $files; do
   fi
 done
 stale=${stale%; }
+live=${live%; }
+planned=${planned%, }
+[ -z "$live" ] && [ -n "$planned" ] && [ "$have_live" = 1 ] && live="none yet · planned: $planned (needs a start number and an end date)"
 
 # --- print ------------------------------------------------------------------------------
 if [ "$have_live" = 0 ]; then
@@ -128,5 +138,6 @@ line Quarter "$quarter"
 line Month "$month"
 line Week "$week"
 line Today "$todayline"
+printf '%-9s %s\n' Live "$(trim "${live:-none}")"
 printf '%-9s %s\n' Stale "${stale:-none}"
 exit 0

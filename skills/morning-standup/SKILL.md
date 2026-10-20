@@ -56,7 +56,7 @@ If a file is absent, or the only file in a folder is documentation, say so on th
 
 ## Step 1 - The previous standup's verdict (always first after the stale list)
 
-Find the most recent dated standup before today, however many days ago, and read it. In team mode that means the caller's own file (`YYYY-MM-DD-<name>.md` with their name), never a teammate's. Before asking anything about today, and directly under any stale-experiment line from Step 3, give one line:
+If a standup file for today already exists (for example the one `/growth-setup` writes), continue it: confirm or update its `must_be_true` and do not treat it as the previous standup. Otherwise find the most recent dated standup before today, however many days ago, and read it. In team mode that means the caller's own file (`YYYY-MM-DD-<name>.md` with their name), never a teammate's. Before asking anything about today, and directly under any stale-experiment line from Step 3, give one line:
 
 ```
 Previous standup (<date>): "<must_be_true>" -> landed | slipped - <why, in a clause>
