@@ -64,7 +64,7 @@ Every line in a retro carries one of three labels. There is no fourth.
 
 ## Testing a skill
 
-- **Eval**: a test case for a skill. A realistic prompt plus a short list of checks the output must pass, kept in a Markdown file. Nothing fancier. `skills/skill-iterator/SKILL.md` runs them; `skills/weekly-retro/tests/personas.md` is a worked set.
+- **Eval**: a repeatable test of a skill. Realistic prompts, each with assertions its output must pass, graded on every run and compared against the previous iteration as the baseline. `skills/skill-iterator/SKILL.md` runs the loop; `skills/weekly-retro/evals/personas.md` is a worked set.
 
 ## Section names
 

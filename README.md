@@ -73,7 +73,7 @@ The baseline was written down and the metric was fixed up front. Then the window
 
 That is why one of the three experiment rules exists. An experiment past its window is named at the start of every session. `/weekly-retro` will not score the week until that experiment is `measured` or `killed`. The full story is in [experiments/README.md](experiments/README.md).
 
-## James runs his business on this every day, mess included
+## James runs his business on this every day
 
 Every morning James runs `/standup`. Every Friday afternoon he spends about an hour on `/weekly-retro`, sometimes longer. The retro asks two kinds of question. How does he feel about the week's progress, and where should he focus next? What do the numbers say, and what would move the needle most next week?
 

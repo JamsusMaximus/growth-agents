@@ -196,4 +196,4 @@ The file ends with this table, whose rows match `retros/weekly/TEMPLATE.md` exac
 - [../../experiments/README.md](../../experiments/README.md) - the status lifecycle and frontmatter Step 1 parses
 - [../morning-standup/SKILL.md](../morning-standup/SKILL.md) - where the slips come from
 - [../monthly-retro/SKILL.md](../monthly-retro/SKILL.md) - where the intentions come from
-- [tests/personas.md](tests/personas.md) - six test personas: the ways a human games the retro, to run the skill against
+- [evals/personas.md](evals/personas.md) - the six ways this skill gets gamed
