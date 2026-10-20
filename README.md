@@ -2,7 +2,7 @@
   <img src="assets/growth-agents-banner.gif" alt="growth-agents" width="100%">
 </p>
 
-<h2 align="center">Your coding agent opens every session with your goals, this week's bets and any experiment past its window.</h2>
+<h2 align="center">The Agentic Growth OS for your coding agent: growth skills, routines that hold you to your goals, pattern-spotting on how you work, and the tools to run it all.</h2>
 
 <p align="center">James McAulay used this setup to take his startup from inception to <b>£100k+ months in 96 days</b>.<br>This repo is the same setup with his business data removed.</p>
 
