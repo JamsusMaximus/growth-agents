@@ -15,7 +15,7 @@
 
 Cost class: a wrong recommendation, weekly, for the whole run.
 
-**How the skills enforce it.** `weekly-retro` and `monthly-retro` carry the degraded mode and the coverage gate as hard stops. The experiment template has a decision-rules field that must be filled before `live`.
+**How the skills enforce it.** `weekly-retro` and `monthly-retro` carry the degraded mode and the coverage gate as hard stops. The experiment template has a Kill criteria section that must be filled before `live`, and the weekly retro keeps an experiment `live` while its typed readout has no source (tool or report, and date read) or sample size per arm.
 
 ## Related
 

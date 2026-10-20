@@ -19,5 +19,5 @@ A worked run of `multi-agent-refine` on a PRD, told as mechanism only.
 ## Related
 
 - [SKILL.md](SKILL.md): the workflow this run followed
-- [observed-asked-unobserved](../../principles/observed-asked-unobserved.md): the anecdote was `unobserved` and should have been labelled so
-- [verified-fixed-or-not-closed](../../principles/verified-fixed-or-not-closed.md): each HIGH reached an end state with evidence
+- [observed-asked-unobserved](../../rules/observed-asked-unobserved.md): the anecdote was `unobserved` and should have been labelled so
+- [verified-fixed-or-not-closed](../../rules/verified-fixed-or-not-closed.md): each HIGH reached an end state with evidence

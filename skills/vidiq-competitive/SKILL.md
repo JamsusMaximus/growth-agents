@@ -319,4 +319,4 @@ competitor read is speculative.
 - [linkedin-post](../linkedin-post/SKILL.md): the off-platform seeding that no metric sees
 - [experiments/README.md](../../experiments/README.md): log a filmed video as an experiment with a window
 - [STACK.md](../../STACK.md): the vidIQ MCP this skill assumes
-- [principles/README.md](../../principles/README.md): why every report ends with what was not checked
+- [rules/README.md](../../rules/README.md): why every report ends with what was not checked

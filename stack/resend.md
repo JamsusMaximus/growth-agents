@@ -34,5 +34,5 @@ Transactional mail (receipts, magic links) goes through one helper in the app. M
 - [../STACK.md](../STACK.md)
 - [kit.md](kit.md)
 - [attio.md](attio.md)
-- [../principles/README.md](../principles/README.md)
+- [../rules/README.md](../rules/README.md)
 - [../CLAUDE.md](../CLAUDE.md)

@@ -7,7 +7,7 @@ description: >
   compounding ledger under a strict test, and sets 2–3 intentions the weekly retro
   inherits. Refuses to record a figure from a stale input. Writes
   retros/monthly/YYYY-MM.md. Use when the user says "monthly retro", "close out the
-  month", "month-end review", "how did the month go", or on the last working day of
+  month", "month-end review", "how did the month go", or on the last cadence day of
   the month.
 license: CC-BY-NC-4.0
 ---
@@ -45,7 +45,7 @@ Section 5 reads "derailers not yet named" and points at the "How to find yours" 
 
 Writes `retros/monthly/YYYY-MM.md` from `retros/monthly/TEMPLATE.md`. Its sections, in the template's order: header (run date, exposure, standup coverage), 1. Pre-read, 2. Facts, 3. Is the year line closer, 4. Compounding ledger, 5. Derailers, `## Intentions` (a numbered list of 2–3 items, which the session-start hook reads; the list starts on the line after the heading with nothing between them), the coverage ledger. Appends to `retros/compounding-ledger.md`; never deletes a row.
 
-**Do not re-pull what the weeklies already computed.** KR scores, slips and coverage were worked out every Friday. Read the first in-month weekly for the baseline and the last for the close. The only fresh pull this session earns is the mission number at month end.
+**Do not re-pull what the weeklies already computed.** KR scores, slips and coverage were worked out at every weekly retro. Read the first in-month weekly for the baseline and the last for the close. The only fresh pull this session earns is the mission number at month end.
 
 ## Step 0 - The uncontaminated question (before any number)
 
@@ -71,7 +71,7 @@ If the repair does not happen, the session does not halt. Run in **degraded mode
 - Everything else runs normally. That is most of the value.
 - No figure for the mission line is recorded in the file. It records `open as of <date>, pending <input>` and a checkbox to reopen the month. The next weekly retro surfaces that checkbox until it is ticked.
 
-A stale figure recorded as the month's close corrupts next month's delta, which is worse than a gap. A stale month does not get a number it did not earn. The rule is `principles/measurement-honesty.md`.
+A stale figure recorded as the month's close corrupts next month's delta, which is worse than a gap. A stale month does not get a number it did not earn. The rule is `rules/measurement-honesty.md`.
 
 ## Step 2 - The facts (one screen)
 
@@ -83,7 +83,7 @@ Fill the section 2 table, every row labelled `observed`, `asked` or `unobserved`
 4. Last month's intentions hit, over the number set, one row each. With no previous dated monthly, the row reads "none set".
 5. The number the mission is in, with where it was read. "Not defined" if the mission is not set.
 
-Then the header: exposure (working days less leave and illness, `asked`) and standup coverage (days with a standup over working days, from the weeklies' ledgers). Then one line: where the pre-read and the facts disagree. That gap is usually the finding.
+Then the header: exposure (cadence days less leave and illness, `asked`; only the person's cadence days count) and standup coverage (days with a standup over working days, from the weeklies' ledgers). Then one line: where the pre-read and the facts disagree. That gap is usually the finding.
 
 Slips that repeated across two or more weeklies go in as facts with dates. No diagnosis here; the weeklies did that. The monthly's contribution is the month-shaped consequence: the trajectory gap, the direction of the objective, the decision the calendar is about to force. Test: if a sentence would have been equally true in any single weekly, cut it.
 
@@ -148,17 +148,17 @@ In degraded mode, no mission figure and the reopen checkbox.
 
 ## Wire it to a routine or cron
 
-Schedule a routine for the last working day of each month that runs Step 1 and Step 2 against the repo and posts the facts. It must not ask Step 0 on the human's behalf and must not write intentions; both need a human in the session. A routine that finds a stale mission source posts the NOT CLOSED line and the reopen checkbox and stops.
+Schedule a routine for the last cadence day of each month that runs Step 1 and Step 2 against the repo and posts the facts. It must not ask Step 0 on the human's behalf and must not write intentions; both need a human in the session. A routine that finds a stale mission source posts the NOT CLOSED line and the reopen checkbox and stops.
 
 If you're in a team: one monthly file for the team, one Step 0 answer per person captured before anyone sees the facts, and one owner per intention.
 
-## Principles this skill enforces
+## Rules this skill enforces
 
-- `principles/measurement-honesty.md` - degraded mode, no stale close
-- `principles/coverage-ledger.md` - the coverage gate reads the weeklies' ledgers
-- `principles/observed-asked-unobserved.md` - every fact labelled
-- `principles/never-fabricate-an-identifier.md` - no figure without a dated source
-- `principles/verified-fixed-or-not-closed.md` - a reopened month stays open until the figure lands
+- `rules/measurement-honesty.md` - degraded mode, no stale close
+- `rules/coverage-ledger.md` - the coverage gate reads the weeklies' ledgers
+- `rules/observed-asked-unobserved.md` - every fact labelled
+- `rules/never-fabricate-an-identifier.md` - no figure without a dated source
+- `rules/verified-fixed-or-not-closed.md` - a reopened month stays open until the figure lands
 
 ## Coverage ledger
 
@@ -167,7 +167,7 @@ The file ends with this table, whose rows match `retros/monthly/TEMPLATE.md` exa
 | Source | Status | Note |
 |---|---|---|
 | Weekly retros this month | checked / failed / n/a | n of n present |
-| Standups this month | checked / failed / n/a | n of n working days |
+| Standups this month | checked / failed / n/a | n of n cadence days |
 | `experiments/*.md` | checked / failed / n/a | |
 | Mission number | checked / failed / n/a | dated |
 | Calendar (exposure) | checked / failed / n/a | asked |
@@ -180,4 +180,4 @@ The file ends with this table, whose rows match `retros/monthly/TEMPLATE.md` exa
 - [../../retros/compounding-ledger.md](../../retros/compounding-ledger.md) - the ledger Step 5 appends to
 - [../../goals/MISSION.md](../../goals/MISSION.md) - the line Step 3 checks
 - [../../goals/derailers.md](../../goals/derailers.md) - the table Step 4 gives verdicts on
-- [../../principles/measurement-honesty.md](../../principles/measurement-honesty.md) - why a stale close is refused
+- [../../rules/measurement-honesty.md](../../rules/measurement-honesty.md) - why a stale close is refused

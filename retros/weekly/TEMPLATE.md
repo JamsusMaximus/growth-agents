@@ -1,18 +1,18 @@
-# Weekly retro - [Friday's date]
+# Weekly retro - [retro day's date, default Friday]
 
-**Week:** [Mon–Fri dates]. **Month's intentions:** [paste from `../monthly/<year>-<mm>.md`, or "no intentions yet"]. **Capacity next week:** [hours, asked].
+**Week:** [the cadence days' dates, default Mon–Fri]. **Month's intentions:** [paste from `../monthly/<year>-<mm>.md`, or "no intentions yet"]. **Capacity next week:** [hours, asked].
 
 <!-- Every line below carries one label: `observed`, `asked`, `unobserved`. The skill drops these HTML comments when it writes the live file. -->
 
 ## 1. Experiments (first, stale on top)
 
-<!-- The week is not scored until every stale experiment is `measured` or `killed`. Stale means `live` with `window_end` before today. The agent lists them; the human types the readout. Example files never appear here: with no live experiments the section reads "no live experiments yet" and the gate is OPEN. -->
+<!-- The week is not scored until every stale experiment is `measured` or `killed`. Stale means `live` with `window_end` before today, or `live` with no readable `window_end` (YYYY-MM-DD). The agent lists them with their `owner:` in a team; the human types the readout, with its source and sample size per arm. Name the folder when an experiment comes from one level down. Example files never appear here: with no live experiments the section reads "no live experiments yet" and the gate is OPEN. -->
 
 | Experiment | Status | Window end | Days over | Readout (typed by you) | Decision |
 |---|---|---|---|---|---|
 | `<slug>` | live | [date] | [n] | [the number, or "not measured"] | measured / killed / [blocked: why] |
 
-**Scoring gate:** [OPEN: all stale experiments resolved] / [SHUT: n unresolved. Sections 2–4 stay blank.]
+**Scoring gate:** [OPEN: all stale experiments resolved] / [SHUT: n unresolved. Sections 2–4 stay blank until the readout; this section is still filled in and the file is still written.]
 
 ## 2. KR scoreboard
 
@@ -44,7 +44,7 @@ Dropped: [what was left off, and "does not move a KR"].
 - [ ] [task] (bet 1)
 - [ ] [task] (bet 2)
 
-<!-- If you're in a team: one scoreboard, one bets list, one pattern-mining table per person. -->
+<!-- If you're in a team: one retro file for the team, with one scoreboard, a bets list per person (the hook reads the first two bets) and one pattern-mining table per person. -->
 
 ## Related
 
@@ -61,7 +61,7 @@ Dropped: [what was left off, and "does not move a KR"].
 | Source | Status | Note |
 |---|---|---|
 | `experiments/*.md` | checked / failed / n/a | |
-| This week's standups | checked / failed / n/a | n of 5 days present |
+| This week's standups | checked / failed / n/a | n of the cadence days present |
 | Current OKRs | checked / failed / n/a | |
 | Latest monthly retro | checked / failed / n/a | |
 | Last week's retro | checked / failed / n/a | |

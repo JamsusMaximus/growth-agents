@@ -14,6 +14,8 @@ license: CC-BY-NC-4.0
 
 Workflow notes for improving a skill without guessing. The harness that runs the loop is Anthropic's `skill-creator` at [github.com/anthropics/skills](https://github.com/anthropics/skills) (Apache-2.0). It is **not vendored here**: install it from upstream, then drive it in this order.
 
+An eval is just a test case: a realistic prompt plus a short list of checks the output must pass, saved in a Markdown file. The loop below writes them, runs them and keeps score.
+
 ## The loop
 
 1. **Write the test cases before touching the skill.** Three to five realistic prompts the skill should handle, each with a short list of assertions ("output contains a coverage ledger", "no em dashes", "asks the mode question before analysing"). A skill with no test cases is an opinion.
@@ -35,5 +37,5 @@ If you're in a team: the test cases live with the skill and are reviewed like co
 ## Related
 
 - [multi-agent-refine](../multi-agent-refine/SKILL.md): the same discipline applied to a document instead of a skill
-- [verified-fixed-or-not-closed](../../principles/verified-fixed-or-not-closed.md): a failing assertion is not closed by "I'll fix that"
+- [verified-fixed-or-not-closed](../../rules/verified-fixed-or-not-closed.md): a failing assertion is not closed by "I'll fix that"
 - [Licences](../../LICENSES.md): why the harness is linked rather than shipped

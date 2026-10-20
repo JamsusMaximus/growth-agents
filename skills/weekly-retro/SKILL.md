@@ -1,7 +1,7 @@
 ---
 name: weekly-retro
 description: >
-  Run the Friday retro against the quarter's OKRs. Reviews every experiment first and
+  Run the weekly retro (on the retro day, default Friday) against the quarter's OKRs. Reviews every experiment first and
   refuses to score the week while any is live past its window; then scores each KR
   0–100%, mines the week's standups for repeated slips, picks 2–3 bets for next week
   and stages the tasks. Every line is labelled observed, asked or unobserved. Writes
@@ -12,6 +12,8 @@ license: CC-BY-NC-4.0
 ---
 
 # Weekly retro
+
+The retro runs on the person's `retro_day` (default Friday), and takes as long as it needs; a quiet week can take ten minutes. Files are dated by that day. Where this skill says "Friday" it means the retro day.
 
 The retro is not a task triage. It answers one question: did this week move the key results, and if not, what pattern stopped it? Lead with the experiments and the scores. The friendly interview comes after, and serves the accountability rather than replacing it.
 
@@ -27,21 +29,25 @@ If the folder you are in has no `goals/`, `retros/` or `experiments/` directorie
 
 If the directories exist but the only OKR, monthly, weekly or experiment files are `TEMPLATE.md`, `EXAMPLE*.md` or `README.md`, or `goals/MISSION.md` still holds `[placeholder]` text, this is the first retro. Say so once.
 
-Do not score against the example KRs, do not read the example bets as last week's, do not gate on the example experiment, and do not borrow the example derailer table from `goals/EXAMPLE-derailers.md`. Run the interview only, every line `asked`, mark those ledger rows `n/a` with the note `first run`, and point at `goals/okrs/TEMPLATE.md` as the thing to fill before next Friday. Write the file with the sections that have content and say plainly which are empty. Do not present a number you did not get from the human or a source in this session. Confident history where there is none destroys every retro after it.
+Do not score against the example KRs, do not read the example bets as last week's, do not gate on the example experiment, and do not borrow the example derailer table from `goals/EXAMPLE-derailers.md`. Run the interview only (unless a stale experiment shuts the gate; see Step 1), every line `asked`, mark those ledger rows `n/a` with the note `first run`, and point at `goals/okrs/TEMPLATE.md` as the thing to fill before the next retro. Write the file with the sections that have content and say plainly which are empty. Do not present a number you did not get from the human or a source in this session. Confident history where there is none destroys every retro after it.
+
+## Where the files live
+
+Read `PROFILE.md` first: `cadence:` (the work days, default mon-fri), `retro_day:` (default fri) and, in team mode, `people:`. Live files may sit in a subfolder named by a `.growth-agents` pointer file or `$GROWTH_AGENTS_ROOT`; otherwise look in `./` and `./growth`. Read experiments there, and also one folder down (for example `clients/<name>/experiments/`), naming the folder in section 1 so the human knows which client or project each one belongs to.
 
 ## Files this skill reads and writes
 
 | Reads | Why |
 |---|---|
-| `experiments/<slug>.md`, never `TEMPLATE.md`, `README.md`, the playbooks or `EXAMPLE-*.md` | Step 1, stale ones first |
+| `experiments/<slug>.md` (and `<folder>/experiments/<slug>.md` one level down), never `TEMPLATE.md`, `README.md`, the playbooks or `EXAMPLE-*.md` | Step 1, stale ones first |
 | the current `goals/okrs/*.md`, never `TEMPLATE.md` or `EXAMPLE.md` | the KRs to score |
-| this week's dated `retros/standups/YYYY-MM-DD.md` | verdicts, slips, coverage |
+| this week's dated `retros/standups/YYYY-MM-DD.md` (team mode: `YYYY-MM-DD-<name>.md`, one per person) | verdicts, slips, coverage |
 | the latest dated `retros/monthly/YYYY-MM.md`, never `EXAMPLE.md` | `## Intentions` the week inherits |
 | the most recent dated `retros/weekly/YYYY-MM-DD.md`, never `EXAMPLE.md` | last week's bets, and the stale-item count |
 | `goals/MISSION.md` | the year line and the annual goals |
 | `goals/derailers.md` | the derailer table, for pattern-mining |
 
-Writes one file: `retros/weekly/YYYY-MM-DD.md`, dated by the Friday it covers, using `retros/weekly/TEMPLATE.md`. Its sections, in the template's order: header (week, the month's intentions pasted in, capacity next week), 1. Experiments, 2. KR scoreboard, 3. Standup pattern-mining, `## Bets` (a numbered list of 2–3 items, which the session-start hook reads; the list starts on the line after the heading with nothing between them), 4. Staged tasks, the coverage ledger.
+Writes one file: `retros/weekly/YYYY-MM-DD.md`, dated by the retro day it covers, using `retros/weekly/TEMPLATE.md`. Its sections, in the template's order: header (week, the month's intentions pasted in, capacity next week), 1. Experiments, 2. KR scoreboard, 3. Standup pattern-mining, `## Bets` (a numbered list of 2–3 items, which the session-start hook reads; the list starts on the line after the heading with nothing between them), 4. Staged tasks, the coverage ledger.
 
 ## Evidence labels (every line, no exceptions)
 
@@ -51,7 +57,7 @@ Every finding in the retro carries one of three labels, and there is no fourth:
 - `asked` - the human answered in this session
 - `unobserved` - you could not see it and nobody told you; treat as unknown
 
-**Ask, do not reconstruct.** If a standup is missing, the day is `unobserved`, not "probably fine". If a KR's number is not in a source, ask for it and label it `asked`. The rule is `principles/observed-asked-unobserved.md`.
+**Ask, do not reconstruct.** If a standup is missing, the day is `unobserved`, not "probably fine". If a KR's number is not in a source, ask for it and label it `asked`. The rule is `rules/observed-asked-unobserved.md`.
 
 ## Step 1 - Experiments review (before anything else)
 
@@ -61,17 +67,21 @@ Sort the live files by urgency:
 
 1. `live` with `window_end` before today: **stale**. These go first.
 2. `live` inside the window: report the days remaining and yesterday's primary metric if analytics are connected.
-3. `planned`: check `baseline` and `primary_metric` are filled. A planned experiment with either blank is not allowed to go live, and you say so.
+3. `planned`: check `baseline` and `primary_metric` are filled. A planned experiment with either blank is not allowed to go live, and you say so. **For an A/B test, run the power check before it may move to `live`:** do the arithmetic in `experiments/power-check.md` with the human's base rate and weekly traffic, show the numbers, and write the verdict into the file's `power_check:` field (for example `can conclude, detects 1.4 points in 3 weeks` or `cannot conclude in window`). On `cannot conclude`, refuse `live`; offer the options in `power-check.md` instead. Never write the verdict without showing the working.
 4. `measured` and `killed` this week: read the result and the learning into the retro.
+
+A `live` experiment with no `window_end`, or one not in `YYYY-MM-DD`, counts as unresolved too (the hook prints these as no window_end or unreadable). Ask for the end date and have the human write it into the file; until then the gate stays shut.
 
 **For each stale experiment, stop.** Fill the section 1 table (slug, status, window end, days over) and show the human the file's `title`, `primary_metric` and `baseline`, then ask for one of two things:
 
-- the readout: the human types the measured value and the result into the file (`## Result`, `## Learning`, a dated line under `## Status`, and `status: measured` in the frontmatter)
+- the readout: the human types the measured value and the result into the file (`## Result`, `## Learning`, a dated line under `## Status`, and `status: measured` in the frontmatter). The readout must carry its source (the tool or report, and the date it was read) and the sample size per arm, or say "n unknown" explicitly. A readout with no source stays `live` and the gate stays shut (`rules/measurement-honesty.md`)
 - the kill: the human types one learning into the file (`## Learning`, `status: killed`)
 
-Until every stale experiment is one or the other, **do not score the week.** Count them. Write `Scoring gate: SHUT` in section 1 with the count, leave sections 2 to 4 blank, and say plainly: "N experiments are past their window. I will score the week once each has a readout or a learning", with N as the count you made (or "One experiment is" when it is one). Do not extend the window on the human's behalf, do not mark it killed on their behalf, and do not carry it to next week's list as if that were a resolution. A late-discovered confounder ("the traffic was weird") goes under the file's Confounders section before the readout; it is not a reason to extend. The refusal is the point of this section (guidance for you; do not say that sentence to the human). `principles/measurement-honesty.md` explains why: an experiment that expires silently teaches you that windows are decorative.
+Until every stale experiment is one or the other, **do not score the week.** Count them. In a team retro, list every stale experiment with its `owner:` (from the frontmatter); the owner is the person asked to type the readout, and one stale experiment still shuts scoring for everyone. Write `Scoring gate: SHUT` in section 1 with the count, and say plainly: "N experiments are past their window. I will score the week once each has a readout or a learning", with N as the count you made (or "One experiment is" when it is one).
 
-Readouts are typed by the human. If analytics are connected, offer the number you can see, labelled `observed`, so typing it is one line of work. Never write it into the file yourself. Once the human says the file is updated, read it back and only then score.
+**A SHUT gate still produces the file.** Write the retro file with section 1 (the gate and the stale list) filled, and leave sections 2 to 4 for after the readout. This also holds on the first retro: if there is a stale experiment, a SHUT gate and the section 1 write-up win over the interview-only path in First run. Do not extend the window on the human's behalf, do not mark it killed on their behalf, and do not carry it to next week's list as if that were a resolution. A late-discovered confounder ("the traffic was weird") goes under the file's Confounders section before the readout; it is not a reason to extend. The refusal is the point of this section (guidance for you; do not say that sentence to the human). `rules/measurement-honesty.md` explains why: an experiment that expires silently teaches you that windows are decorative.
+
+Readouts are typed by the human. If analytics are connected, offer the number you can see, labelled `observed`, so typing it is one line of work. Never write it into the file yourself. Once the human says the file is updated, read it back and only then score. The read-back also covers experiments closed since the last retro: a file already at `status: measured` whose `## Result` has no source or sample size (or explicit "n unknown") is not accepted. Name it in section 1, treat it as unresolved like a stale one, and ask for the source.
 
 ## Step 2 - Score every KR
 
@@ -95,7 +105,7 @@ Read last week's `## Bets` from the most recent dated weekly file. If none exist
 
 Read every dated standup this week. Count:
 
-- days with a standup and days without (this is the week's coverage, and the monthly retro needs it)
+- cadence days with a standup and cadence days without (this is the week's coverage, and the monthly retro needs it). Days outside the person's `cadence:` are not unobserved; leave them out of the count
 - verdicts: landed, slipped, pending
 - what slipped, and whether the same thing slipped more than once this week or appeared in last week's slips
 
@@ -120,9 +130,9 @@ Then play it back as six bullets, one per question, and ask what is wrong. Only 
 
 ## Step 6 - Pick 2–3 bets and stage the tasks
 
-Braindump everything on the table for next week. Score each item with the rubric in `principles/prioritisation-rubric.md`: which KR it moves, quantified where possible, time to impact, reversibility. Then output:
+Braindump everything on the table for next week. Score each item with the rubric in `rules/prioritisation-rubric.md`: which KR it moves, quantified where possible, time to impact, reversibility. Then output:
 
-- **Bets**: 2–3, each naming the KR it moves and the smallest version that counts, with a checkable condition for next Friday ("three outreach messages sent by Wednesday", not "do outreach"). These are the numbered list under `## Bets`, starting on the line after the heading.
+- **Bets**: 2–3, each naming the KR it moves and the smallest version that counts, with a checkable condition for the next retro day ("three outreach messages sent by Wednesday", not "do outreach"). These are the numbered list under `## Bets`, starting on the line after the heading.
 - **Dropped**: in the readout, with the reason "does not move a KR". Be willing to say most of the list is busywork. One line under the bets list records what was dropped, so next week can refuse it when it creeps back.
 
 At least one bet must serve the month's primary intention from the latest dated monthly retro. If none does, say so and ask whether the intention is being abandoned. If no dated monthly retro exists, say "no intentions yet" in the header and skip the check.
@@ -137,7 +147,7 @@ Before writing, compare this retro's bets, blockers and "still stuck" items agai
 - a drop, written under Dropped with the reason
 - an owner, if you're in a team, named in the bet
 
-"Carry forward" is not a fourth option. Carry forward is theatre: it lets an item feel alive while it costs a line every Friday and moves nothing. Say it once, in one sentence, then ask which of the three it is.
+"Carry forward" is not a fourth option. Carry forward is theatre: it lets an item feel alive while it costs a line every retro and moves nothing. Say it once, in one sentence, then ask which of the three it is.
 
 ## Step 8 - Write the file
 
@@ -153,17 +163,17 @@ If the human asks for a version to send to someone else, keep the private file w
 
 ## Wire it to a routine or cron
 
-Schedule this for the end of the working week. A routine that runs Step 1 and Step 2 on Friday morning and posts the stale list plus the draft scores means the human arrives at the retro with the hard part already on the table. The interview and the bets still need a human in the session; the routine stops at Step 4 and says so.
+Schedule this for the retro day. A routine that runs Step 1 and Step 2 on that morning and posts the stale list plus the draft scores means the human arrives at the retro with the hard part already on the table. The interview and the bets still need a human in the session; the routine stops at Step 4 and says so.
 
-If you're in a team: one retro for the team, but each KR has one owner who scores it, and each bet has one owner. A bet with two owners has none.
+If you're in a team: one retro file for the team, with a bets list per person (the session-start hook reads the first two bets). Each KR has one owner who scores it, and each bet has one owner. A bet with two owners has none.
 
-## Principles this skill enforces
+## Rules this skill enforces
 
-- `principles/measurement-honesty.md` - no scoring while an experiment is stale
-- `principles/observed-asked-unobserved.md` - every line labelled, ask before reconstructing
-- `principles/prioritisation-rubric.md` and `principles/prioritisation-pitfalls.md` - how bets are chosen
-- `principles/coverage-ledger.md` - every source recorded
-- `principles/never-fabricate-an-identifier.md` - task ids and numbers come from a source or stay blank
+- `rules/measurement-honesty.md` - no scoring while an experiment is stale
+- `rules/observed-asked-unobserved.md` - every line labelled, ask before reconstructing
+- `rules/prioritisation-rubric.md` and `rules/prioritisation-pitfalls.md` - how bets are chosen
+- `rules/coverage-ledger.md` - every source recorded
+- `rules/never-fabricate-an-identifier.md` - task ids and numbers come from a source or stay blank
 
 ## Coverage ledger
 
@@ -172,7 +182,7 @@ The file ends with this table, whose rows match `retros/weekly/TEMPLATE.md` exac
 | Source | Status | Note |
 |---|---|---|
 | `experiments/*.md` | checked / failed / n/a | |
-| This week's standups | checked / failed / n/a | n of 5 days present |
+| This week's standups | checked / failed / n/a | n of the cadence days present |
 | Current OKRs | checked / failed / n/a | |
 | Latest monthly retro | checked / failed / n/a | |
 | Last week's retro | checked / failed / n/a | |
@@ -186,4 +196,4 @@ The file ends with this table, whose rows match `retros/weekly/TEMPLATE.md` exac
 - [../../experiments/README.md](../../experiments/README.md) - the status lifecycle and frontmatter Step 1 parses
 - [../morning-standup/SKILL.md](../morning-standup/SKILL.md) - where the slips come from
 - [../monthly-retro/SKILL.md](../monthly-retro/SKILL.md) - where the intentions come from
-- [evals/personas.md](evals/personas.md) - the five ways this skill gets gamed
+- [tests/personas.md](tests/personas.md) - six test personas: the ways a human games the retro, to run the skill against

@@ -14,9 +14,9 @@ A derailer is a way you lose a week that you would recognise if someone showed y
 | [name it] | [the tell] | [smallest version today] |
 | [name it] | [the tell] | [smallest version today] |
 
-If you're in a team: one table per person, and derailers are personal. Do not name someone else's for them.
+If you're in a team: add a `Who` column as the first column, and each person writes only their own rows. Derailers are personal. Do not name someone else's for them.
 
-A row still reading `[name it]` means "not yet named". The standup asks; it never borrows a row from `EXAMPLE-derailers.md`.
+`/growth-setup` writes only the derailers you actually named and deletes the unused rows above, so no `[name it]` row sits in your live file. A table with at least one real row (yours, in a team) is filled; one with no rows means "not yet named". The standup asks; it never borrows a row from `EXAMPLE-derailers.md`.
 
 ## How to find yours
 

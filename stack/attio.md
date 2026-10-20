@@ -35,4 +35,4 @@ The weekly retro pulls the pipeline with a weighted forecast and the open opport
 - [../skills/weekly-retro/SKILL.md](../skills/weekly-retro/SKILL.md)
 - [../skills/morning-standup/SKILL.md](../skills/morning-standup/SKILL.md)
 - [resend.md](resend.md)
-- [../principles/README.md](../principles/README.md)
+- [../rules/README.md](../rules/README.md)

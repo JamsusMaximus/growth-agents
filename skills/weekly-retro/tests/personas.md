@@ -1,6 +1,6 @@
 # Weekly retro: adversarial personas
 
-Five ways a human, without meaning to, turns the retro into theatre. Run the skill against each and check it does the good thing. Every persona uses the running example: an online business selling a digital product, lead → customer conversion going from 10% to 20%, an email list growing from 1,000 to 2,000, a pricing page test called `pricing-page-headline`.
+Six ways a human, without meaning to, turns the retro into theatre. Run the skill against each and check it does the good thing. Every persona uses the running example: an online business selling a digital product, lead → customer conversion going from 10% to 20%, an email list growing from 1,000 to 2,000, a pricing page test called `pricing-page-headline`.
 
 ## 1. The first-timer with no files
 
@@ -42,6 +42,14 @@ Five ways a human, without meaning to, turns the retro into theatre. Run the ski
 
 **A good run:** keeps the private file whole, with the avoidance and its label intact. Produces a second, shorter version for sharing with a "parked" list instead of a drop list and a section for the human's asks. States which sections were left out of the shared version so the human can check before sending. The agent drafts; the human sends.
 
+## 6. The unsourced-readout analyst
+
+**What they say:** "pricing-page-headline is done, 5.1% vs 3.0%, you can score now." They type the numbers straight into `## Result` to open the gate. No tool, no date, no sample size.
+
+**A bad run:** accepts the typed numbers, flips the status to `measured` and scores the week. A number with no provenance has opened the gate.
+
+**A good run:** asks where the figure came from (tool or report, and the date it was read) and the sample size per arm. If the human cannot say, the readout is written with the source missing or "n unknown" stated, the experiment stays `live`, and the gate stays SHUT. With a source and sample sizes in the file, it reads the file back and only then scores.
+
 ## How to use these
 
 Run each persona as a scripted session against the skill. A run passes when the good-run behaviours appear and none of the bad-run ones do. Note which persona a change to `SKILL.md` was made for, so the next edit does not quietly reintroduce the failure.
@@ -49,6 +57,6 @@ Run each persona as a scripted session against the skill. A run passes when the 
 ## Related
 
 - [../SKILL.md](../SKILL.md) - the skill under test
-- [../../../principles/observed-asked-unobserved.md](../../../principles/observed-asked-unobserved.md) - the labels the first-timer test relies on
-- [../../../principles/measurement-honesty.md](../../../principles/measurement-honesty.md) - why the defending user is refused
+- [../../../rules/observed-asked-unobserved.md](../../../rules/observed-asked-unobserved.md) - the labels the first-timer test relies on
+- [../../../rules/measurement-honesty.md](../../../rules/measurement-honesty.md) - why the defending user is refused
 - [../../../goals/derailers.md](../../../goals/derailers.md) - what the avoidance user is showing

@@ -15,9 +15,9 @@
 | KR | Objective | Type | Baseline | Target | Experiment |
 |---|---|---|---|---|---|
 | KR1.1 | O1 | behaviour | no test running | one conversion test live at all times, with a power check | n/a |
-| KR1.2 | O1 | outcome | 10% lead → customer conversion | 20% | `../../experiments/pricing-page-headline.md` |
+| KR1.2 | O1 | outcome | 10% lead → customer conversion | 20% | `../../experiments/EXAMPLE-live-stale.md` |
 | KR2.1 | O2 | behaviour | published 7 of the last 13 weeks | publish every Tuesday, 13 of 13 | n/a |
-| KR2.2 | O2 | outcome | 1,000 on the list | 1,250 by quarter end | `../../experiments/welcome-sequence-v2.md` |
+| KR2.2 | O2 | outcome | 1,000 on the list | 1,250 by quarter end | `../../experiments/EXAMPLE-killed.md` |
 
 ## Dropped this quarter
 

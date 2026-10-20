@@ -6,7 +6,7 @@ The spine that holds you to account. Every bet you make on growth is a file in t
 
 1. **No experiment goes live without a baseline and a metric written down first.** The template refuses to be `live` with either blank. If you cannot write the number you are starting from, you are not ready to start.
 2. **Anything `live` past its `window_end` is surfaced at the top of every session and every weekly retro until it is `measured` or `killed`.** The weekly retro will not score the week while one is outstanding. No silent expiry. No auto-kill.
-3. **No A/B test without a power check.** If it cannot conclude in the window, it is not an experiment yet. See `power-check.md`.
+3. **No A/B test without a power check.** If it cannot conclude in the window, it is not an experiment yet. The weekly retro runs the arithmetic in `power-check.md` before an A/B test may go `live`, and the verdict goes in `power_check:`.
 
 ## Why rule 2 exists
 
@@ -25,7 +25,7 @@ There is no `paused`. A paused experiment is a live one you are not looking at, 
 
 ## Frontmatter schema
 
-Copied from `GLOSSARY.md`. Every file in this folder carries exactly these fields.
+Copied from `GLOSSARY.md`. Every file in this folder carries these fields; `owner` and `power_check` are optional (team mode, and A/B tests respectively). `kr` holds the key result id (KR1.1) or the objective id (O1).
 
 ```yaml
 ---
@@ -34,11 +34,13 @@ status: live          # planned | live | measured | killed
 kr: O1                # which key result this moves
 primary_metric: lead → customer conversion
 baseline: 10%
-window_end: 2026-08-20
+window_end: 2026-08-20   # YYYY-MM-DD, or the hook reports it unreadable
+owner: Sam            # optional, team mode
+power_check: can conclude, detects 1.4 points in 3 weeks   # A/B tests only
 ---
 ```
 
-`status` is the only field the hook and the retro skills need to find stale work: `live` with a `window_end` before today.
+`status` and `window_end` are what the hook and the retro skills need to find stale work: `live` with a `window_end` before today, or `live` with no readable `window_end`.
 
 ## What v1 does and does not do
 

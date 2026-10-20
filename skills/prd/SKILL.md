@@ -222,5 +222,5 @@ The template in "House format" above is the structural reference. If this projec
 
 - [../multi-agent-refine/SKILL.md](../multi-agent-refine/SKILL.md) - pressure-test the PRD before anyone builds from it
 - [../../experiments/TEMPLATE.md](../../experiments/TEMPLATE.md) - the experiment file a growth PRD usually ends by staging
-- [../../principles/can-this-experiment-conclude.md](../../principles/can-this-experiment-conclude.md) - the power check every test PRD runs
+- [../../rules/can-this-experiment-conclude.md](../../rules/can-this-experiment-conclude.md) - the power check every test PRD runs
 - [../../ROSTER.md](../../ROSTER.md) - where this hire sits

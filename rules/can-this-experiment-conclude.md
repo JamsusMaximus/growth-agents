@@ -6,7 +6,7 @@
 
 Cost class: a wasted six weeks, avoided only because the check ran before the spend.
 
-**How the skills enforce it.** `experiments/TEMPLATE.md` refuses `live` without a baseline and a metric, and `experiments/power-check.md` is the arithmetic: minimum detectable effect, sample per variant, weeks to reach it at current traffic. The weekly retro runs that check before it lets anything move to `live`, and the answer goes into the experiment file. If the honest answer is "it cannot conclude", the file stays `planned` and the decision rules go in before anything else does.
+**How the skills enforce it.** `experiments/TEMPLATE.md` refuses `live` without a baseline and a metric, and `experiments/power-check.md` is the arithmetic: minimum detectable effect, sample per variant, weeks to reach it at current traffic. The weekly retro runs that check with you before it lets an A/B test move from `planned` to `live`, shows the numbers, and writes the verdict into the file's `power_check:` field. If the honest answer is "it cannot conclude", the file stays `planned` and the kill criteria go in before anything else does.
 
 Do not judge on a bad week either. Conversions lag. The window is the window.
 
@@ -14,5 +14,5 @@ Do not judge on a bad week either. Conversions lag. The window is the window.
 
 - [../experiments/power-check.md](../experiments/power-check.md) - the arithmetic
 - [../experiments/ab-test-playbook.md](../experiments/ab-test-playbook.md) - running one that can conclude
-- [measurement-honesty.md](measurement-honesty.md) - pre-registered decision rules
+- [measurement-honesty.md](measurement-honesty.md) - pre-registered kill criteria
 - [../experiments/TEMPLATE.md](../experiments/TEMPLATE.md) - the refusal to go live blank
