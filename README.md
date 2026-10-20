@@ -51,7 +51,7 @@ Read /path/to/growth-agents/AGENTS.md and follow it. My work folder is the one w
 [AGENTS.md](AGENTS.md) tells the agent how to run the briefing and which skill file each command maps to.
 
 1. Open your agent in the folder where your goals and experiments will live: a new folder, or your own work repo. The first session prints the example briefing, every line marked `(example)`.
-2. Run `/growth-setup`. Rapid mode takes five to ten minutes: where any goals you already have live, five questions and which days you work, plus a quick check only where one applies. Full mode is an hour-long interview on your goals.
+2. Run `/growth-setup`. Rapid mode takes five to ten minutes: where any goals you already have live, then a few plain questions about your year, this quarter, this week and today. You finish with today's plan on screen. Full mode is an hour-long interview on your goals.
 3. Check the files it writes: your mission, OKRs, derailers and first experiment. It reads your folder first, follows any rules in your own CLAUDE.md, and picks a profile (solo, growth lead, product marketing, SEO or content).
 4. Run `/standup` on each day you work on growth, and `/weekly-retro` on the last one of your week. Setup asks which days those are.
 
